@@ -36,13 +36,13 @@ function M.load()
   vim.g.terminal_color_15 = c.bg_dim
 
   ---------------------------------------------------------------------------
-  -- Editor UI
+  -- Editor UI (bg values match everforest bg1/bg2/bg3/bg4 mapping)
   ---------------------------------------------------------------------------
   hi('Normal', { fg = c.fg, bg = c.bg })
   hi('NormalNC', { fg = c.fg, bg = c.bg })
-  hi('NormalFloat', { fg = c.fg, bg = c.bg_float })
-  hi('FloatBorder', { fg = c.stone_grey, bg = c.bg_float })
-  hi('FloatTitle', { fg = c.terracotta, bg = c.bg_float, bold = true })
+  hi('NormalFloat', { fg = c.fg, bg = c.bg2 })
+  hi('FloatBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('FloatTitle', { fg = c.light_pebble, bg = c.bg2 })
 
   hi('Cursor', { fg = c.bg, bg = c.fg })
   hi('lCursor', { link = 'Cursor' })
@@ -51,68 +51,68 @@ function M.load()
   hi('TermCursorNC', { fg = c.bg, bg = c.stone_grey })
 
   hi('CursorLine', { bg = c.bg_cursor })
-  hi('CursorColumn', { bg = c.bg_cursor })
-  hi('CursorLineNr', { fg = c.dark_grey, bg = c.bg_cursor, bold = true })
-  hi('CursorLineFold', { bg = c.bg_cursor })
-  hi('CursorLineSign', { bg = c.bg_cursor })
-  hi('ColorColumn', { bg = c.bg_visual })
+  hi('CursorColumn', { bg = c.bg1 })
+  hi('CursorLineNr', { fg = c.pale_stone, bg = c.bg1 })
+  hi('CursorLineFold', { bg = c.bg1 })
+  hi('CursorLineSign', { bg = c.bg1 })
+  hi('ColorColumn', { bg = c.bg1 })
 
-  hi('LineNr', { fg = c.pale_stone })
-  hi('SignColumn', { fg = c.fg, bg = 'NONE' })
-  hi('FoldColumn', { fg = c.stone_grey, bg = 'NONE' })
-  hi('Folded', { fg = c.stone_grey, bg = c.bg_dim })
+  hi('LineNr', { fg = c.river_stone })
+  hi('SignColumn', { fg = c.fg })
+  hi('FoldColumn', { fg = c.pale_stone })
+  hi('Folded', { fg = c.light_pebble, bg = c.bg1 })
 
-  hi('Conceal', { fg = c.stone_grey })
-  hi('NonText', { fg = c.pale_stone })
-  hi('SpecialKey', { fg = c.pale_stone })
-  hi('Whitespace', { fg = c.pale_stone })
+  hi('Conceal', { fg = c.light_pebble })
+  hi('NonText', { fg = c.bg4 })
+  hi('SpecialKey', { fg = c.bg4 })
+  hi('Whitespace', { fg = c.bg4 })
   hi('EndOfBuffer', { fg = c.bg })
 
   hi('Visual', { bg = c.bg_visual })
   hi('VisualNOS', { bg = c.bg_visual })
-  hi('Search', { fg = c.fg, bg = c.bg_search })
-  hi('IncSearch', { fg = c.bg, bg = c.warm_orange })
-  hi('CurSearch', { fg = c.bg, bg = c.warm_amber })
-  hi('Substitute', { fg = c.bg, bg = c.coral })
+  hi('Search', { fg = c.bg, bg = c.olive, bold = true })
+  hi('IncSearch', { fg = c.bg, bg = c.brick })
+  hi('CurSearch', { fg = c.bg, bg = c.brick })
+  hi('Substitute', { fg = c.bg, bg = c.honey })
 
-  hi('MatchParen', { fg = c.warm_orange, bg = c.bg_visual, bold = true })
+  hi('MatchParen', { bg = c.bg4 })
 
-  hi('Pmenu', { fg = c.fg, bg = c.bg_float })
-  hi('PmenuSel', { fg = c.fg, bg = c.bg_visual })
-  hi('PmenuSbar', { bg = c.bg_dim })
-  hi('PmenuThumb', { bg = c.pale_stone })
-  hi('PmenuKind', { fg = c.terracotta, bg = c.bg_float })
-  hi('PmenuKindSel', { fg = c.terracotta, bg = c.bg_visual })
-  hi('PmenuExtra', { fg = c.stone_grey, bg = c.bg_float })
-  hi('PmenuExtraSel', { fg = c.stone_grey, bg = c.bg_visual })
+  hi('Pmenu', { fg = c.fg, bg = c.bg2 })
+  hi('PmenuSel', { fg = c.bg, bg = c.statusline1 })
+  hi('PmenuSbar', { bg = c.bg2 })
+  hi('PmenuThumb', { bg = c.river_stone })
+  hi('PmenuKind', { fg = c.olive, bg = c.bg2 })
+  hi('PmenuKindSel', { fg = c.bg, bg = c.statusline1 })
+  hi('PmenuExtra', { fg = c.light_pebble, bg = c.bg2 })
+  hi('PmenuExtraSel', { fg = c.bg, bg = c.statusline1 })
 
-  hi('StatusLine', { fg = c.dark_grey, bg = c.bg_dim })
-  hi('StatusLineNC', { fg = c.stone_grey, bg = c.bg_dim })
-  hi('WinBar', { fg = c.dark_grey, bg = 'NONE', bold = true })
-  hi('WinBarNC', { fg = c.stone_grey, bg = 'NONE' })
-  hi('WinSeparator', { fg = c.pale_stone, bg = 'NONE' })
+  hi('StatusLine', { fg = c.light_pebble, bg = c.bg2 })
+  hi('StatusLineNC', { fg = c.light_pebble, bg = c.bg1 })
+  hi('WinBar', { fg = c.light_pebble, bg = c.bg2, bold = true })
+  hi('WinBarNC', { fg = c.light_pebble, bg = c.bg1 })
+  hi('WinSeparator', { fg = c.bg4 })
 
-  hi('TabLine', { fg = c.stone_grey, bg = c.bg_dim })
-  hi('TabLineFill', { bg = c.bg_dim })
-  hi('TabLineSel', { fg = c.fg, bg = c.bg, bold = true })
+  hi('TabLine', { fg = c.pale_stone, bg = c.bg3 })
+  hi('TabLineFill', { bg = c.bg1 })
+  hi('TabLineSel', { fg = c.bg, bg = c.statusline1, bold = true })
 
-  hi('Title', { fg = c.terracotta, bold = true })
-  hi('Directory', { fg = c.sage_green })
-  hi('WildMenu', { fg = c.bg, bg = c.warm_amber })
+  hi('Title', { fg = c.warm_orange, bold = true })
+  hi('Directory', { fg = c.olive })
+  hi('WildMenu', { fg = c.bg, bg = c.statusline1 })
 
-  hi('ErrorMsg', { fg = c.coral, bold = true })
+  hi('ErrorMsg', { fg = c.brick, bold = true })
   hi('WarningMsg', { fg = c.honey, bold = true })
   hi('ModeMsg', { fg = c.fg, bold = true })
-  hi('MoreMsg', { fg = c.sage, bold = true })
-  hi('Question', { fg = c.sage, bold = true })
+  hi('MoreMsg', { fg = c.olive, bold = true })
+  hi('Question', { fg = c.olive, bold = true })
 
   ---------------------------------------------------------------------------
   -- Diff
   ---------------------------------------------------------------------------
   hi('DiffAdd', { bg = c.bg_green })
   hi('DiffChange', { bg = c.bg_blue })
-  hi('DiffDelete', { fg = c.brick, bg = c.bg_red })
-  hi('DiffText', { fg = c.fg, bg = c.bg_diff_text })
+  hi('DiffDelete', { bg = c.bg_red })
+  hi('DiffText', { fg = c.bg, bg = c.storm_blue })
   hi('Added', { fg = c.olive })
   hi('Changed', { fg = c.storm_blue })
   hi('Removed', { fg = c.brick })
@@ -120,13 +120,13 @@ function M.load()
   ---------------------------------------------------------------------------
   -- Spell
   ---------------------------------------------------------------------------
-  hi('SpellBad', { undercurl = true, sp = c.coral })
+  hi('SpellBad', { undercurl = true, sp = c.brick })
   hi('SpellCap', { undercurl = true, sp = c.honey })
   hi('SpellLocal', { undercurl = true, sp = c.aqua })
   hi('SpellRare', { undercurl = true, sp = c.dusty_purple })
 
   ---------------------------------------------------------------------------
-  -- Standard syntax
+  -- Standard syntax (everforest defaults with user's colours_override palette)
   ---------------------------------------------------------------------------
   hi('Comment', { fg = c.comment, italic = true })
   hi('String', { fg = c.olive })
@@ -171,7 +171,7 @@ function M.load()
   hi('Error', { fg = c.brick })
   hi('Todo', { fg = c.bg, bg = c.storm_blue, bold = true })
 
-  -- Named color groups (used by some plugins/themes)
+  -- Named color groups (from on_highlights overrides)
   hi('Red', { fg = c.red })
   hi('Orange', { fg = c.orange })
   hi('Purple', { fg = c.purple })
@@ -180,49 +180,70 @@ function M.load()
   ---------------------------------------------------------------------------
   -- Treesitter
   ---------------------------------------------------------------------------
-  -- Identifiers
+  -- Identifiers (on_highlights overrides)
   hi('@variable', { fg = c.deep_forest })
   hi('@variable.builtin', { fg = c.driftwood })
   hi('@variable.parameter', { fg = c.clay })
+  -- Default: Blue
   hi('@variable.member', { fg = c.storm_blue })
 
+  -- on_highlights override
   hi('@constant', { fg = c.earth_brown })
+  -- Defaults: PurpleItalic
   hi('@constant.builtin', { fg = c.dusty_purple })
   hi('@constant.macro', { fg = c.dusty_purple })
 
-  hi('@module', { fg = c.honey, italic = true })
-  hi('@module.builtin', { fg = c.honey, italic = true })
+  -- Default: YellowItalic (no italic since italics=false)
+  hi('@module', { fg = c.honey })
+  hi('@module.builtin', { fg = c.honey })
+  -- Default: Orange
   hi('@label', { fg = c.warm_orange })
 
   -- Literals
+  -- on_highlights override
   hi('@string', { fg = c.moss })
   hi('@string.documentation', { fg = c.comment, italic = true })
-  hi('@string.escape', { fg = c.warm_orange })
+  -- Default: Green
+  hi('@string.escape', { fg = c.olive })
   hi('@string.regexp', { fg = c.olive })
-  hi('@string.special', { fg = c.warm_orange })
-  hi('@string.special.symbol', { fg = c.earth_brown })
+  -- Default: SpecialChar -> Yellow
+  hi('@string.special', { fg = c.honey })
+  -- Default: Aqua
+  hi('@string.special.symbol', { fg = c.aqua })
+  -- Default: TSURI -> Blue underline
   hi('@string.special.url', { fg = c.storm_blue, underline = true })
   hi('@string.special.path', { fg = c.storm_blue })
 
-  hi('@character', { fg = c.olive })
-  hi('@character.special', { fg = c.olive })
+  -- Default: Aqua
+  hi('@character', { fg = c.aqua })
+  hi('@character.special', { fg = c.aqua })
+  -- on_highlights overrides
   hi('@boolean', { fg = c.earth_brown })
   hi('@number', { fg = c.warm_amber })
+  -- on_highlights override
   hi('@number.float', { fg = c.petal })
 
   -- Types
+  -- on_highlights override
   hi('@type', { fg = c.sage_green })
-  hi('@type.builtin', { fg = c.sage_green })
-  hi('@type.definition', { fg = c.sage_green })
-  hi('@type.qualifier', { fg = c.terracotta })
+  -- Default: YellowItalic (no italic)
+  hi('@type.builtin', { fg = c.honey })
+  hi('@type.definition', { fg = c.honey })
+  -- Default: Orange
+  hi('@type.qualifier', { fg = c.warm_orange })
 
+  -- Default: Purple
   hi('@attribute', { fg = c.dusty_purple })
   hi('@attribute.builtin', { fg = c.dusty_purple })
+  -- Default: Blue
   hi('@property', { fg = c.storm_blue })
 
   -- Functions
+  -- on_highlights override
   hi('@function', { fg = c.blue_stone })
+  -- on_highlights override
   hi('@function.builtin', { fg = c.bark })
+  -- Default: Green
   hi('@function.call', { fg = c.olive })
   hi('@function.macro', { fg = c.olive })
   hi('@function.method', { fg = c.olive })
@@ -230,24 +251,35 @@ function M.load()
   hi('@constructor', { fg = c.olive })
 
   -- Keywords
+  -- on_highlights override
   hi('@keyword', { fg = c.terracotta })
+  -- Default: Red
   hi('@keyword.coroutine', { fg = c.brick })
   hi('@keyword.function', { fg = c.brick })
+  -- Default: Orange
   hi('@keyword.operator', { fg = c.warm_orange })
-  hi('@keyword.import', { fg = c.dusty_purple })
+  -- Default: Red (TSInclude)
+  hi('@keyword.import', { fg = c.brick })
+  -- Default: inherits @keyword (on_highlights override)
   hi('@keyword.type', { fg = c.terracotta })
-  hi('@keyword.modifier', { fg = c.terracotta })
+  -- Default: Orange (TSTypeQualifier)
+  hi('@keyword.modifier', { fg = c.warm_orange })
+  -- Default: Red
   hi('@keyword.repeat', { fg = c.brick })
   hi('@keyword.return', { fg = c.brick })
+  -- Default: Orange (Debug)
   hi('@keyword.debug', { fg = c.warm_orange })
   hi('@keyword.exception', { fg = c.brick })
+  -- Default: Red (Conditional)
   hi('@keyword.conditional', { fg = c.brick })
-  hi('@keyword.conditional.ternary', { fg = c.charcoal })
+  hi('@keyword.conditional.ternary', { fg = c.brick })
+  -- Default: PurpleItalic (PreProc)
   hi('@keyword.directive', { fg = c.dusty_purple })
   hi('@keyword.directive.define', { fg = c.dusty_purple })
-  hi('@keyword.storage', { fg = c.terracotta })
+  -- Default: Orange (StorageClass)
+  hi('@keyword.storage', { fg = c.warm_orange })
 
-  -- Operators & punctuation
+  -- Operators & punctuation (on_highlights overrides)
   hi('@operator', { fg = c.charcoal })
   hi('@punctuation', { fg = c.stone_grey })
   hi('@punctuation.bracket', { fg = c.stone_grey })
@@ -257,6 +289,7 @@ function M.load()
   -- Comments
   hi('@comment', { fg = c.comment, italic = true })
   hi('@comment.documentation', { fg = c.comment, italic = true })
+  -- on_highlights overrides (from @text.danger/warning/todo/note)
   hi('@comment.error', { fg = c.coral, bold = true })
   hi('@comment.warning', { fg = c.honey, bold = true })
   hi('@comment.todo', { fg = c.sage, bold = true })
@@ -267,25 +300,31 @@ function M.load()
   hi('@markup.italic', { italic = true })
   hi('@markup.strikethrough', { strikethrough = true })
   hi('@markup.underline', { underline = true })
-  hi('@markup.heading', { fg = c.terracotta, bold = true })
-  hi('@markup.heading.1', { fg = c.terracotta, bold = true })
-  hi('@markup.heading.2', { fg = c.warm_amber, bold = true })
-  hi('@markup.heading.3', { fg = c.sage_green, bold = true })
-  hi('@markup.heading.4', { fg = c.storm_blue, bold = true })
-  hi('@markup.heading.5', { fg = c.dusty_purple, bold = true })
-  hi('@markup.heading.6', { fg = c.stone_grey, bold = true })
-  hi('@markup.quote', { fg = c.stone_grey, italic = true })
+  -- Default: Title -> Orange
+  hi('@markup.heading', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.1', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.2', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.3', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.4', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.5', { fg = c.warm_orange, bold = true })
+  hi('@markup.heading.6', { fg = c.warm_orange, bold = true })
+  -- Default: Grey
+  hi('@markup.quote', { fg = c.light_pebble, italic = true })
   hi('@markup.math', { fg = c.warm_amber })
-  hi('@markup.link', { fg = c.storm_blue, underline = true })
-  hi('@markup.link.label', { fg = c.storm_blue })
+  -- Default: Constant -> Aqua
+  hi('@markup.link', { fg = c.aqua })
+  hi('@markup.link.label', { fg = c.aqua })
+  -- Default: TSURI -> Blue underline
   hi('@markup.link.url', { fg = c.storm_blue, underline = true })
-  hi('@markup.raw', { fg = c.earth_brown })
+  -- Default: String -> Green
+  hi('@markup.raw', { fg = c.olive })
   hi('@markup.raw.block', { fg = c.fg })
-  hi('@markup.list', { fg = c.terracotta })
+  -- Default: TSPunctSpecial -> Blue
+  hi('@markup.list', { fg = c.storm_blue })
   hi('@markup.list.checked', { fg = c.olive, bold = true })
   hi('@markup.list.unchecked', { fg = c.sage, bold = true })
 
-  -- Tags (HTML/JSX)
+  -- Tags (HTML/JSX) - Default: Orange/Green
   hi('@tag', { fg = c.warm_orange })
   hi('@tag.attribute', { fg = c.olive })
   hi('@tag.delimiter', { fg = c.olive })
@@ -296,7 +335,7 @@ function M.load()
   hi('@diff.minus', { fg = c.brick })
   hi('@diff.delta', { fg = c.storm_blue })
 
-  -- @text aliases (older treesitter)
+  -- @text aliases (older treesitter, from on_highlights)
   hi('@text.todo', { fg = c.sage, bold = true })
   hi('@text.note', { fg = c.storm_blue, bold = true })
   hi('@text.warning', { fg = c.honey, bold = true })
@@ -348,7 +387,7 @@ function M.load()
   hi('LspInfoBorder', { link = 'FloatBorder' })
 
   ---------------------------------------------------------------------------
-  -- Diagnostics
+  -- Diagnostics (diagnostic_virtual_text = 'grey' uses bg2)
   ---------------------------------------------------------------------------
   hi('DiagnosticError', { fg = c.coral })
   hi('DiagnosticWarn', { fg = c.honey })
@@ -361,25 +400,31 @@ function M.load()
   hi('DiagnosticUnderlineInfo', { undercurl = true, sp = c.sage })
   hi('DiagnosticUnderlineHint', { undercurl = true, sp = c.storm_blue })
 
-  hi('DiagnosticVirtualTextError', { fg = c.coral, bg = c.bg_red })
-  hi('DiagnosticVirtualTextWarn', { fg = c.honey, bg = c.bg_yellow })
-  hi('DiagnosticVirtualTextInfo', { fg = c.sage, bg = c.bg_green })
-  hi('DiagnosticVirtualTextHint', { fg = c.storm_blue, bg = c.bg_blue })
+  -- grey mode: all virtual text uses bg2 as background
+  hi('DiagnosticVirtualTextError', { fg = c.brick, bg = c.bg2 })
+  hi('DiagnosticVirtualTextWarn', { fg = c.honey, bg = c.bg2 })
+  hi('DiagnosticVirtualTextInfo', { fg = c.storm_blue, bg = c.bg2 })
+  hi('DiagnosticVirtualTextHint', { fg = c.dusty_purple, bg = c.bg2 })
 
-  hi('DiagnosticFloatingError', { fg = c.coral })
+  hi('DiagnosticFloatingError', { fg = c.brick })
   hi('DiagnosticFloatingWarn', { fg = c.honey })
-  hi('DiagnosticFloatingInfo', { fg = c.sage })
-  hi('DiagnosticFloatingHint', { fg = c.storm_blue })
+  hi('DiagnosticFloatingInfo', { fg = c.storm_blue })
+  hi('DiagnosticFloatingHint', { fg = c.dusty_purple })
 
-  hi('DiagnosticSignError', { fg = c.coral })
+  hi('DiagnosticSignError', { fg = c.brick })
   hi('DiagnosticSignWarn', { fg = c.honey })
-  hi('DiagnosticSignInfo', { fg = c.sage })
-  hi('DiagnosticSignHint', { fg = c.storm_blue })
+  hi('DiagnosticSignInfo', { fg = c.storm_blue })
+  hi('DiagnosticSignHint', { fg = c.dusty_purple })
 
   hi('ErrorFloat', { fg = c.rust_conditional })
 
   ---------------------------------------------------------------------------
-  -- Git signs
+  -- Treesitter context
+  ---------------------------------------------------------------------------
+  hi('TreesitterContext', { fg = c.fg, bg = c.bg2 })
+
+  ---------------------------------------------------------------------------
+  -- Git signs (from on_highlights)
   ---------------------------------------------------------------------------
   hi('GitSignsAdd', { fg = c.olive })
   hi('GitSignsChange', { fg = c.honey })
@@ -392,7 +437,7 @@ function M.load()
   hi('GitSignsDeleteLn', { bg = c.bg_red })
 
   ---------------------------------------------------------------------------
-  -- Todo comments
+  -- Todo comments (from on_highlights)
   ---------------------------------------------------------------------------
   hi('TodoBgTODO', { bg = c.sage, fg = c.bg_dim, bold = true })
   hi('TodoFgTODO', { fg = c.sage, bold = true })
@@ -423,19 +468,19 @@ function M.load()
   hi('TodoSignTEST', { fg = c.dusty_purple, bold = true })
 
   ---------------------------------------------------------------------------
-  -- Yanky
+  -- Yanky (from on_highlights)
   ---------------------------------------------------------------------------
-  hi('YankyPut', { bg = c.terracotta, fg = c.bg_dim })
-  hi('YankyYanked', { bg = c.terracotta, fg = c.bg_dim })
+  hi('YankyPut', { bg = c.bg_yank })
+  hi('YankyYanked', { bg = c.bg_yank })
 
   ---------------------------------------------------------------------------
-  -- Blink pairs
+  -- Blink pairs (from on_highlights)
   ---------------------------------------------------------------------------
   hi('BlinkPairsWarm1', { fg = c.warm_orange })
   hi('BlinkPairsWarm2', { fg = c.river_stone })
 
   ---------------------------------------------------------------------------
-  -- Rust overrides
+  -- Rust overrides (from on_highlights)
   ---------------------------------------------------------------------------
   hi('@keyword.rust', { fg = c.rust_keyword })
   hi('@keyword.conditional.rust', { fg = c.rust_conditional })
@@ -457,18 +502,18 @@ function M.load()
   hi('@lsp.mod.constant.rust', { fg = c.rust_storage })
 
   ---------------------------------------------------------------------------
-  -- NeoTree
+  -- NeoTree (everforest defaults with user palette)
   ---------------------------------------------------------------------------
   hi('NeoTreeNormal', { fg = c.fg, bg = c.bg_dim })
   hi('NeoTreeNormalNC', { fg = c.fg, bg = c.bg_dim })
   hi('NeoTreeEndOfBuffer', { fg = c.bg_dim, bg = c.bg_dim })
-  hi('NeoTreeWinSeparator', { fg = c.bg_dim, bg = c.bg_dim })
-  hi('NeoTreeCursorLine', { bg = c.bg_visual })
-  hi('NeoTreeDirectoryName', { fg = c.sage_green })
-  hi('NeoTreeDirectoryIcon', { fg = c.sage })
+  hi('NeoTreeWinSeparator', { fg = c.bg, bg = c.bg })
+  hi('NeoTreeCursorLine', { bg = c.bg })
+  hi('NeoTreeDirectoryName', { fg = c.olive })
+  hi('NeoTreeDirectoryIcon', { fg = c.olive })
   hi('NeoTreeFileName', { fg = c.fg })
   hi('NeoTreeFileIcon', { fg = c.stone_grey })
-  hi('NeoTreeRootName', { fg = c.terracotta, bold = true })
+  hi('NeoTreeRootName', { fg = c.warm_orange, bold = true })
   hi('NeoTreeGitAdded', { fg = c.olive })
   hi('NeoTreeGitModified', { fg = c.honey })
   hi('NeoTreeGitDeleted', { fg = c.brick })
@@ -479,25 +524,25 @@ function M.load()
   ---------------------------------------------------------------------------
   -- WhichKey
   ---------------------------------------------------------------------------
-  hi('WhichKey', { fg = c.terracotta })
-  hi('WhichKeyGroup', { fg = c.storm_blue })
-  hi('WhichKeySeparator', { fg = c.stone_grey })
-  hi('WhichKeyDesc', { fg = c.fg })
-  hi('WhichKeyFloat', { bg = c.bg_float })
-  hi('WhichKeyBorder', { fg = c.stone_grey, bg = c.bg_float })
-  hi('WhichKeyValue', { fg = c.stone_grey })
+  hi('WhichKey', { fg = c.brick })
+  hi('WhichKeyGroup', { fg = c.olive })
+  hi('WhichKeySeparator', { fg = c.light_pebble })
+  hi('WhichKeyDesc', { fg = c.storm_blue })
+  hi('WhichKeyFloat', { bg = c.bg1 })
+  hi('WhichKeyBorder', { fg = c.light_pebble, bg = c.bg1 })
+  hi('WhichKeyValue', { fg = c.light_pebble })
 
   ---------------------------------------------------------------------------
   -- Lazy.nvim
   ---------------------------------------------------------------------------
-  hi('LazyH1', { fg = c.bg, bg = c.terracotta, bold = true })
-  hi('LazyButton', { fg = c.fg, bg = c.bg_dim })
-  hi('LazyButtonActive', { fg = c.bg, bg = c.sage, bold = true })
-  hi('LazySpecial', { fg = c.warm_amber })
-  hi('LazyReasonPlugin', { fg = c.storm_blue })
+  hi('LazyH1', { fg = c.bg, bg = c.olive, bold = true })
+  hi('LazyButton', { fg = c.light_pebble, bg = c.bg2 })
+  hi('LazyButtonActive', { fg = c.bg, bg = c.brick, bold = true })
+  hi('LazySpecial', { fg = c.honey })
+  hi('LazyReasonPlugin', { fg = c.olive })
   hi('LazyReasonEvent', { fg = c.honey })
   hi('LazyReasonKeys', { fg = c.dusty_purple })
-  hi('LazyReasonCmd', { fg = c.olive })
+  hi('LazyReasonCmd', { fg = c.storm_blue })
 
   ---------------------------------------------------------------------------
   -- Trouble
@@ -509,17 +554,17 @@ function M.load()
   ---------------------------------------------------------------------------
   -- Flash
   ---------------------------------------------------------------------------
-  hi('FlashMatch', { fg = c.fg, bg = c.bg_search })
-  hi('FlashCurrent', { fg = c.bg, bg = c.warm_orange, bold = true })
-  hi('FlashLabel', { fg = c.bg, bg = c.coral, bold = true })
+  hi('FlashMatch', { fg = c.fg, bg = c.bg_yellow })
+  hi('FlashCurrent', { fg = c.bg, bg = c.olive, bold = true })
+  hi('FlashLabel', { fg = c.bg, bg = c.brick, bold = true })
 
   ---------------------------------------------------------------------------
   -- Noice
   ---------------------------------------------------------------------------
-  hi('NoiceCmdlinePopup', { fg = c.fg, bg = c.bg_float })
-  hi('NoiceCmdlinePopupBorder', { fg = c.stone_grey, bg = c.bg_float })
-  hi('NoiceCmdlineIcon', { fg = c.terracotta })
-  hi('NoiceMini', { fg = c.fg, bg = c.bg_dim })
+  hi('NoiceCmdlinePopup', { fg = c.fg, bg = c.bg2 })
+  hi('NoiceCmdlinePopupBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('NoiceCmdlineIcon', { fg = c.olive })
+  hi('NoiceMini', { fg = c.fg, bg = c.bg2 })
 end
 
 return M

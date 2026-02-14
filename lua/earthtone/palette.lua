@@ -5,33 +5,37 @@ return {
 
   -- Backgrounds
   bg = '#e8dcc6',
+  bg1 = '#eae4ca',
+  bg2 = '#e5dfc5',
+  bg3 = '#ddd8be',
+  bg4 = '#d8d3ba',
+  bg5 = '#b9c0ab',
   bg_dim = '#f8f1de',
   bg_cursor = '#faf3e8',
-  bg_float = '#f0e8d4',
   bg_visual = '#d5c9b8',
-  bg_search = '#e8d8a8',
   bg_yank = '#e8e2cf',
   bg_red = '#fce8e8',
   bg_green = '#f0f4e6',
   bg_blue = '#e8f0f3',
   bg_yellow = '#faf3e0',
-  bg_diff_text = '#d0e4e8',
   bg_reference = '#e0d4be',
   bg_reference_write = '#d6c8ac',
 
   -- Accent
-  terracotta = '#7a4f3a',
-  dusty_purple = '#9b7d8a',
-  coral = '#c85552',
-  honey = '#c9a05a',
-  sage = '#708c7e',
-  storm_blue = '#6b8b8f',
-  olive = '#89a05d',
   brick = '#b85450',
   warm_orange = '#c08563',
+  honey = '#c9a05a',
+  olive = '#89a05d',
   aqua = '#6b9b91',
+  storm_blue = '#6b8b8f',
+  dusty_purple = '#9b7d8a',
 
-  -- Named colors (used by some plugins)
+  -- on_highlights overrides for specific groups
+  terracotta = '#7a4f3a',
+  coral = '#c85552',
+  sage = '#708c7e',
+
+  -- Named color groups
   red = '#a84440',
   orange = '#c2591e',
   purple = '#8b6d7a',
