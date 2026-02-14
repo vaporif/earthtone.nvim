@@ -370,6 +370,8 @@ function M.load()
   hi('@lsp.type.typeParameter', { link = '@type.definition' })
   hi('@lsp.type.variable', { link = '@variable' })
 
+  hi('@lsp.type.generic', { fg = c.olive })
+
   hi('@lsp.mod.deprecated', { strikethrough = true })
   hi('@lsp.mod.readonly', { italic = true })
   hi('@lsp.mod.defaultLibrary', { link = '@variable.builtin' })
