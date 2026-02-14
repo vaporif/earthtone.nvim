@@ -52,7 +52,7 @@ function M.load()
 
   hi('CursorLine', { bg = c.bg_cursor })
   hi('CursorColumn', { bg = c.bg1 })
-  hi('CursorLineNr', { fg = c.pale_stone, bg = c.bg1 })
+  hi('CursorLineNr', { fg = c.light_pebble })
   hi('CursorLineFold', { bg = c.bg1 })
   hi('CursorLineSign', { bg = c.bg1 })
   hi('ColorColumn', { bg = c.bg1 })
