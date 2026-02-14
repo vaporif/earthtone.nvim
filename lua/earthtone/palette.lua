@@ -64,4 +64,20 @@ return {
   statusline1 = '#5c6a72',
   statusline2 = '#708c7e',
   statusline3 = '#7a8478',
+
+  -- Semantic variants (reusable across languages)
+  keyword_warm = '#8b5a3c',
+  conditional_warm = '#9d6b47',
+  modifier_copper = '#b87333',
+  keyword_muted = '#8b7355',
+  storage_amber = '#a67c52',
+  import_warm = '#a17c59',
+  method_sage = '#7a8a7f',
+  type_deep = '#4a6b5d',
+  function_deep = '#4b6b6f',
+  call_warm = '#8b7d6b',
+  operator_warm = '#8a7766',
+  constant_warm = '#a08770',
+  float_muted = '#9a8f85',
+  control_warm = '#846347',
 }
