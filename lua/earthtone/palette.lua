@@ -3,7 +3,7 @@ return {
   fg = '#5c6a72',
   comment = '#9da9a0',
 
-  -- Backgrounds
+  -- Backgrounds (bg -> bg5: progressively darker, bg_dim: lighter than bg)
   bg = '#e8dcc6',
   bg1 = '#eae4ca',
   bg2 = '#e5dfc5',
@@ -21,7 +21,7 @@ return {
   bg_reference = '#e0d4be',
   bg_reference_write = '#d6c8ac',
 
-  -- Accent
+  -- Accent (primary palette colors used across all highlight groups)
   brick = '#b85450',
   warm_orange = '#c08563',
   honey = '#c9a05a',
@@ -29,35 +29,35 @@ return {
   aqua = '#6b9b91',
   storm_blue = '#6b8b8f',
   dusty_purple = '#9b7d8a',
-
-  -- on_highlights overrides for specific groups
   terracotta = '#7a4f3a',
   coral = '#c85552',
   sage = '#708c7e',
 
-  -- Named color groups
+  -- Link targets (used by plugins that link to named highlight groups)
   red = '#a84440',
   orange = '#c2591e',
   purple = '#8b6d7a',
 
-  -- Syntax
+  -- Syntax base
   deep_forest = '#4d5b56',
   blue_stone = '#3b5b5f',
   sage_green = '#3a5b4d',
   earth_brown = '#907760',
   warm_amber = '#a8814f',
-  stone_grey = '#7d8d85',
-  river_stone = '#859289',
   moss = '#5a6a4e',
   charcoal = '#5a4746',
   driftwood = '#8a8275',
   clay = '#7a5a4a',
   petal = '#b8a0a8',
   bark = '#7a6d5b',
-  lichen = '#8d9d8d',
   twig = '#7a6756',
 
-  -- UI
+  -- Syntax structural (punctuation, operators, line numbers)
+  stone_grey = '#7d8d85',
+  river_stone = '#859289',
+  lichen = '#8d9d8d',
+
+  -- UI chrome
   dark_grey = '#5c6a72',
   light_pebble = '#9da9a0',
   pale_stone = '#b5c1b8',
@@ -65,7 +65,7 @@ return {
   statusline2 = '#708c7e',
   statusline3 = '#7a8478',
 
-  -- Semantic variants (reusable across languages)
+  -- Semantic variants (reusable per-language overrides)
   keyword_warm = '#8b5a3c',
   conditional_warm = '#9d6b47',
   modifier_copper = '#b87333',

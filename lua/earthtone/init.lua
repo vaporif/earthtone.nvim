@@ -36,7 +36,7 @@ function M.load()
   vim.g.terminal_color_15 = c.bg_dim
 
   ---------------------------------------------------------------------------
-  -- Editor UI (bg values match everforest bg1/bg2/bg3/bg4 mapping)
+  -- Editor UI
   ---------------------------------------------------------------------------
   hi('Normal', { fg = c.fg, bg = c.bg })
   hi('NormalNC', { fg = c.fg, bg = c.bg })
@@ -128,7 +128,7 @@ function M.load()
   hi('SpellRare', { undercurl = true, sp = c.dusty_purple })
 
   ---------------------------------------------------------------------------
-  -- Standard syntax (everforest defaults with user's colours_override palette)
+  -- Vim syntax
   ---------------------------------------------------------------------------
   hi('Comment', { fg = c.comment, italic = true })
   hi('String', { fg = c.olive })
@@ -173,7 +173,7 @@ function M.load()
   hi('Error', { fg = c.brick })
   hi('Todo', { fg = c.bg, bg = c.storm_blue, bold = true })
 
-  -- Named color groups (from on_highlights overrides)
+  -- Named groups referenced by other highlight links
   hi('Red', { fg = c.red })
   hi('Orange', { fg = c.orange })
   hi('Purple', { fg = c.purple })
@@ -182,127 +182,85 @@ function M.load()
   ---------------------------------------------------------------------------
   -- Treesitter
   ---------------------------------------------------------------------------
-  -- Identifiers (on_highlights overrides)
   hi('@variable', { fg = c.deep_forest })
   hi('@variable.builtin', { fg = c.driftwood })
   hi('@variable.parameter', { fg = c.clay })
-  -- Default: Blue
   hi('@variable.member', { fg = c.storm_blue })
 
-  -- on_highlights override
   hi('@constant', { fg = c.earth_brown })
-  -- Defaults: PurpleItalic
   hi('@constant.builtin', { fg = c.dusty_purple })
   hi('@constant.macro', { fg = c.dusty_purple })
 
-  -- Default: YellowItalic (no italic since italics=false)
   hi('@module', { fg = c.honey })
   hi('@module.builtin', { fg = c.honey })
-  -- Default: Orange
   hi('@label', { fg = c.warm_orange })
 
-  -- Literals
-  -- on_highlights override
   hi('@string', { fg = c.moss })
   hi('@string.documentation', { fg = c.comment, italic = true })
-  -- Default: Green
   hi('@string.escape', { fg = c.olive })
   hi('@string.regexp', { fg = c.olive })
-  -- Default: SpecialChar -> Yellow
   hi('@string.special', { fg = c.honey })
-  -- Default: Aqua
   hi('@string.special.symbol', { fg = c.aqua })
-  -- Default: TSURI -> Blue underline
   hi('@string.special.url', { fg = c.storm_blue, underline = true })
   hi('@string.special.path', { fg = c.storm_blue })
 
-  -- Default: Aqua
   hi('@character', { fg = c.aqua })
   hi('@character.special', { fg = c.aqua })
-  -- on_highlights overrides
   hi('@boolean', { fg = c.earth_brown })
   hi('@number', { fg = c.warm_amber })
-  -- on_highlights override
   hi('@number.float', { fg = c.petal })
 
-  -- Types
-  -- on_highlights override
   hi('@type', { fg = c.sage_green })
-  -- Default: YellowItalic (no italic)
   hi('@type.builtin', { fg = c.honey })
   hi('@type.definition', { fg = c.honey })
-  -- Default: Orange
   hi('@type.qualifier', { fg = c.warm_orange })
 
-  -- Default: Purple
   hi('@attribute', { fg = c.dusty_purple })
   hi('@attribute.builtin', { fg = c.dusty_purple })
-  -- Default: Blue
   hi('@property', { fg = c.storm_blue })
 
-  -- Functions
-  -- on_highlights override
   hi('@function', { fg = c.blue_stone })
-  -- on_highlights override
   hi('@function.builtin', { fg = c.bark })
-  -- Default: Green
   hi('@function.call', { fg = c.olive })
   hi('@function.macro', { fg = c.olive })
   hi('@function.method', { fg = c.olive })
   hi('@function.method.call', { fg = c.olive })
   hi('@constructor', { fg = c.olive })
 
-  -- Keywords
-  -- on_highlights override
   hi('@keyword', { fg = c.terracotta })
-  -- Default: Red
   hi('@keyword.coroutine', { fg = c.brick })
   hi('@keyword.function', { fg = c.brick })
-  -- Default: Orange
   hi('@keyword.operator', { fg = c.warm_orange })
-  -- Default: Red (TSInclude)
   hi('@keyword.import', { fg = c.brick })
-  -- Default: inherits @keyword (on_highlights override)
   hi('@keyword.type', { fg = c.terracotta })
-  -- Default: Orange (TSTypeQualifier)
   hi('@keyword.modifier', { fg = c.warm_orange })
-  -- Default: Red
   hi('@keyword.repeat', { fg = c.brick })
   hi('@keyword.return', { fg = c.brick })
-  -- Default: Orange (Debug)
   hi('@keyword.debug', { fg = c.warm_orange })
   hi('@keyword.exception', { fg = c.brick })
-  -- Default: Red (Conditional)
   hi('@keyword.conditional', { fg = c.brick })
   hi('@keyword.conditional.ternary', { fg = c.brick })
-  -- Default: PurpleItalic (PreProc)
   hi('@keyword.directive', { fg = c.dusty_purple })
   hi('@keyword.directive.define', { fg = c.dusty_purple })
-  -- Default: Orange (StorageClass)
   hi('@keyword.storage', { fg = c.warm_orange })
 
-  -- Operators & punctuation (on_highlights overrides)
   hi('@operator', { fg = c.charcoal })
   hi('@punctuation', { fg = c.stone_grey })
   hi('@punctuation.bracket', { fg = c.stone_grey })
   hi('@punctuation.delimiter', { fg = c.lichen })
   hi('@punctuation.special', { fg = c.twig })
 
-  -- Comments
   hi('@comment', { fg = c.comment, italic = true })
   hi('@comment.documentation', { fg = c.comment, italic = true })
-  -- on_highlights overrides (from @text.danger/warning/todo/note)
   hi('@comment.error', { fg = c.coral, bold = true })
   hi('@comment.warning', { fg = c.honey, bold = true })
   hi('@comment.todo', { fg = c.sage, bold = true })
   hi('@comment.note', { fg = c.storm_blue, bold = true })
 
-  -- Markup
   hi('@markup.strong', { bold = true })
   hi('@markup.italic', { italic = true })
   hi('@markup.strikethrough', { strikethrough = true })
   hi('@markup.underline', { underline = true })
-  -- Default: Title -> Orange
   hi('@markup.heading', { fg = c.warm_orange, bold = true })
   hi('@markup.heading.1', { fg = c.warm_orange, bold = true })
   hi('@markup.heading.2', { fg = c.warm_orange, bold = true })
@@ -310,34 +268,27 @@ function M.load()
   hi('@markup.heading.4', { fg = c.warm_orange, bold = true })
   hi('@markup.heading.5', { fg = c.warm_orange, bold = true })
   hi('@markup.heading.6', { fg = c.warm_orange, bold = true })
-  -- Default: Grey
   hi('@markup.quote', { fg = c.light_pebble, italic = true })
   hi('@markup.math', { fg = c.warm_amber })
-  -- Default: Constant -> Aqua
   hi('@markup.link', { fg = c.aqua })
   hi('@markup.link.label', { fg = c.aqua })
-  -- Default: TSURI -> Blue underline
   hi('@markup.link.url', { fg = c.storm_blue, underline = true })
-  -- Default: String -> Green
   hi('@markup.raw', { fg = c.olive })
   hi('@markup.raw.block', { fg = c.fg })
-  -- Default: TSPunctSpecial -> Blue
   hi('@markup.list', { fg = c.storm_blue })
   hi('@markup.list.checked', { fg = c.olive, bold = true })
   hi('@markup.list.unchecked', { fg = c.sage, bold = true })
 
-  -- Tags (HTML/JSX) - Default: Orange/Green
   hi('@tag', { fg = c.warm_orange })
   hi('@tag.attribute', { fg = c.olive })
   hi('@tag.delimiter', { fg = c.olive })
   hi('@tag.builtin', { fg = c.warm_orange })
 
-  -- Diff
   hi('@diff.plus', { fg = c.olive })
   hi('@diff.minus', { fg = c.brick })
   hi('@diff.delta', { fg = c.storm_blue })
 
-  -- @text aliases (older treesitter, from on_highlights)
+  -- Legacy @text aliases
   hi('@text.todo', { fg = c.sage, bold = true })
   hi('@text.note', { fg = c.storm_blue, bold = true })
   hi('@text.warning', { fg = c.honey, bold = true })
@@ -371,7 +322,6 @@ function M.load()
   hi('@lsp.type.type', { link = '@type' })
   hi('@lsp.type.typeParameter', { link = '@type.definition' })
   hi('@lsp.type.variable', { link = '@variable' })
-
   hi('@lsp.type.generic', { fg = c.olive })
 
   hi('@lsp.mod.deprecated', { strikethrough = true })
@@ -391,7 +341,7 @@ function M.load()
   hi('LspInfoBorder', { link = 'FloatBorder' })
 
   ---------------------------------------------------------------------------
-  -- Diagnostics (diagnostic_virtual_text = 'grey' uses bg2)
+  -- Diagnostics
   ---------------------------------------------------------------------------
   hi('DiagnosticError', { fg = c.coral })
   hi('DiagnosticWarn', { fg = c.honey })
@@ -404,7 +354,6 @@ function M.load()
   hi('DiagnosticUnderlineInfo', { undercurl = true, sp = c.sage })
   hi('DiagnosticUnderlineHint', { undercurl = true, sp = c.storm_blue })
 
-  -- grey mode: all virtual text uses bg2 as background
   hi('DiagnosticVirtualTextError', { fg = c.brick, bg = c.bg2 })
   hi('DiagnosticVirtualTextWarn', { fg = c.honey, bg = c.bg2 })
   hi('DiagnosticVirtualTextInfo', { fg = c.storm_blue, bg = c.bg2 })
@@ -421,67 +370,6 @@ function M.load()
   hi('DiagnosticSignHint', { fg = c.dusty_purple })
 
   hi('ErrorFloat', { fg = c.conditional_warm })
-
-  ---------------------------------------------------------------------------
-  -- Treesitter context
-  ---------------------------------------------------------------------------
-  hi('TreesitterContext', { fg = c.fg, bg = c.bg2 })
-
-  ---------------------------------------------------------------------------
-  -- Git signs (from on_highlights)
-  ---------------------------------------------------------------------------
-  hi('GitSignsAdd', { fg = c.olive })
-  hi('GitSignsChange', { fg = c.honey })
-  hi('GitSignsDelete', { fg = c.brick })
-  hi('GitSignsAddNr', { fg = c.olive })
-  hi('GitSignsChangeNr', { fg = c.honey })
-  hi('GitSignsDeleteNr', { fg = c.brick })
-  hi('GitSignsAddLn', { bg = c.bg_green })
-  hi('GitSignsChangeLn', { bg = c.bg_blue })
-  hi('GitSignsDeleteLn', { bg = c.bg_red })
-
-  ---------------------------------------------------------------------------
-  -- Todo comments (from on_highlights)
-  ---------------------------------------------------------------------------
-  hi('TodoBgTODO', { bg = c.sage, fg = c.bg_dim, bold = true })
-  hi('TodoFgTODO', { fg = c.sage, bold = true })
-  hi('TodoSignTODO', { fg = c.sage, bold = true })
-
-  hi('TodoBgFIX', { bg = c.coral, fg = c.bg_dim, bold = true })
-  hi('TodoFgFIX', { fg = c.coral, bold = true })
-  hi('TodoSignFIX', { fg = c.coral, bold = true })
-
-  hi('TodoBgHACK', { bg = c.honey, fg = c.bg_dim, bold = true })
-  hi('TodoFgHACK', { fg = c.honey, bold = true })
-  hi('TodoSignHACK', { fg = c.honey, bold = true })
-
-  hi('TodoBgWARN', { bg = c.honey, fg = c.bg_dim, bold = true })
-  hi('TodoFgWARN', { fg = c.honey, bold = true })
-  hi('TodoSignWARN', { fg = c.honey, bold = true })
-
-  hi('TodoBgPERF', { bg = c.dusty_purple, fg = c.bg_dim, bold = true })
-  hi('TodoFgPERF', { fg = c.dusty_purple, bold = true })
-  hi('TodoSignPERF', { fg = c.dusty_purple, bold = true })
-
-  hi('TodoBgNOTE', { bg = c.storm_blue, fg = c.bg_dim, bold = true })
-  hi('TodoFgNOTE', { fg = c.storm_blue, bold = true })
-  hi('TodoSignNOTE', { fg = c.storm_blue, bold = true })
-
-  hi('TodoBgTEST', { bg = c.dusty_purple, fg = c.bg_dim, bold = true })
-  hi('TodoFgTEST', { fg = c.dusty_purple, bold = true })
-  hi('TodoSignTEST', { fg = c.dusty_purple, bold = true })
-
-  ---------------------------------------------------------------------------
-  -- Yanky (from on_highlights)
-  ---------------------------------------------------------------------------
-  hi('YankyPut', { bg = c.bg_yank })
-  hi('YankyYanked', { bg = c.bg_yank })
-
-  ---------------------------------------------------------------------------
-  -- Blink pairs (from on_highlights)
-  ---------------------------------------------------------------------------
-  hi('BlinkPairsWarm1', { fg = c.warm_orange })
-  hi('BlinkPairsWarm2', { fg = c.river_stone })
 
   ---------------------------------------------------------------------------
   -- Rust (semantic variants)
@@ -501,7 +389,6 @@ function M.load()
   hi('@constant.builtin.rust', { fg = c.constant_warm })
   hi('@number.float.rust', { fg = c.float_muted })
 
-  -- Rust LSP semantic tokens
   hi('@lsp.type.type.rust', { fg = c.type_deep })
   hi('@lsp.type.struct.rust', { fg = c.type_deep })
   hi('@lsp.type.enum.rust', { fg = c.type_deep })
@@ -519,8 +406,55 @@ function M.load()
   hi('@lsp.mod.constant.rust', { fg = c.storage_amber })
 
   ---------------------------------------------------------------------------
-  -- NeoTree (everforest defaults with user palette)
+  -- Plugins
   ---------------------------------------------------------------------------
+
+  -- treesitter-context
+  hi('TreesitterContext', { fg = c.fg, bg = c.bg2 })
+
+  -- gitsigns
+  hi('GitSignsAdd', { fg = c.olive })
+  hi('GitSignsChange', { fg = c.honey })
+  hi('GitSignsDelete', { fg = c.brick })
+  hi('GitSignsAddNr', { fg = c.olive })
+  hi('GitSignsChangeNr', { fg = c.honey })
+  hi('GitSignsDeleteNr', { fg = c.brick })
+  hi('GitSignsAddLn', { bg = c.bg_green })
+  hi('GitSignsChangeLn', { bg = c.bg_blue })
+  hi('GitSignsDeleteLn', { bg = c.bg_red })
+
+  -- todo-comments
+  hi('TodoBgTODO', { bg = c.sage, fg = c.bg_dim, bold = true })
+  hi('TodoFgTODO', { fg = c.sage, bold = true })
+  hi('TodoSignTODO', { fg = c.sage, bold = true })
+  hi('TodoBgFIX', { bg = c.coral, fg = c.bg_dim, bold = true })
+  hi('TodoFgFIX', { fg = c.coral, bold = true })
+  hi('TodoSignFIX', { fg = c.coral, bold = true })
+  hi('TodoBgHACK', { bg = c.honey, fg = c.bg_dim, bold = true })
+  hi('TodoFgHACK', { fg = c.honey, bold = true })
+  hi('TodoSignHACK', { fg = c.honey, bold = true })
+  hi('TodoBgWARN', { bg = c.honey, fg = c.bg_dim, bold = true })
+  hi('TodoFgWARN', { fg = c.honey, bold = true })
+  hi('TodoSignWARN', { fg = c.honey, bold = true })
+  hi('TodoBgPERF', { bg = c.dusty_purple, fg = c.bg_dim, bold = true })
+  hi('TodoFgPERF', { fg = c.dusty_purple, bold = true })
+  hi('TodoSignPERF', { fg = c.dusty_purple, bold = true })
+  hi('TodoBgNOTE', { bg = c.storm_blue, fg = c.bg_dim, bold = true })
+  hi('TodoFgNOTE', { fg = c.storm_blue, bold = true })
+  hi('TodoSignNOTE', { fg = c.storm_blue, bold = true })
+  hi('TodoBgTEST', { bg = c.dusty_purple, fg = c.bg_dim, bold = true })
+  hi('TodoFgTEST', { fg = c.dusty_purple, bold = true })
+  hi('TodoSignTEST', { fg = c.dusty_purple, bold = true })
+
+  -- yanky
+  hi('YankyPut', { bg = c.bg_yank })
+  hi('YankyYanked', { bg = c.bg_yank })
+
+  -- blink.pairs
+  hi('BlinkPairsWarm1', { fg = c.warm_orange })
+  hi('BlinkPairsWarm2', { fg = c.river_stone })
+
+  -- neo-tree
   hi('NeoTreeNormal', { fg = c.fg, bg = c.bg_dim })
   hi('NeoTreeNormalNC', { fg = c.fg, bg = c.bg_dim })
   hi('NeoTreeEndOfBuffer', { fg = c.bg_dim, bg = c.bg_dim })
@@ -538,9 +472,7 @@ function M.load()
   hi('NeoTreeGitUntracked', { fg = c.dusty_purple })
   hi('NeoTreeIndentMarker', { fg = c.pale_stone })
 
-  ---------------------------------------------------------------------------
-  -- WhichKey
-  ---------------------------------------------------------------------------
+  -- which-key
   hi('WhichKey', { fg = c.brick })
   hi('WhichKeyGroup', { fg = c.olive })
   hi('WhichKeySeparator', { fg = c.light_pebble })
@@ -549,9 +481,7 @@ function M.load()
   hi('WhichKeyBorder', { fg = c.light_pebble, bg = c.bg1 })
   hi('WhichKeyValue', { fg = c.light_pebble })
 
-  ---------------------------------------------------------------------------
-  -- Lazy.nvim
-  ---------------------------------------------------------------------------
+  -- lazy.nvim
   hi('LazyH1', { fg = c.bg, bg = c.olive, bold = true })
   hi('LazyButton', { fg = c.light_pebble, bg = c.bg2 })
   hi('LazyButtonActive', { fg = c.bg, bg = c.brick, bold = true })
@@ -561,27 +491,191 @@ function M.load()
   hi('LazyReasonKeys', { fg = c.dusty_purple })
   hi('LazyReasonCmd', { fg = c.storm_blue })
 
-  ---------------------------------------------------------------------------
-  -- Trouble
-  ---------------------------------------------------------------------------
+  -- trouble
   hi('TroubleNormal', { fg = c.fg, bg = c.bg_dim })
   hi('TroubleNormalNC', { fg = c.fg, bg = c.bg_dim })
   hi('TroubleCount', { fg = c.bg, bg = c.terracotta, bold = true })
 
-  ---------------------------------------------------------------------------
-  -- Flash
-  ---------------------------------------------------------------------------
+  -- flash
   hi('FlashMatch', { fg = c.fg, bg = c.bg_yellow })
   hi('FlashCurrent', { fg = c.bg, bg = c.olive, bold = true })
   hi('FlashLabel', { fg = c.bg, bg = c.brick, bold = true })
 
-  ---------------------------------------------------------------------------
-  -- Noice
-  ---------------------------------------------------------------------------
+  -- noice
   hi('NoiceCmdlinePopup', { fg = c.fg, bg = c.bg2 })
   hi('NoiceCmdlinePopupBorder', { fg = c.light_pebble, bg = c.bg2 })
   hi('NoiceCmdlineIcon', { fg = c.olive })
   hi('NoiceMini', { fg = c.fg, bg = c.bg2 })
+
+  -- blink.cmp
+  hi('BlinkCmpMenu', { fg = c.fg, bg = c.bg2 })
+  hi('BlinkCmpMenuBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('BlinkCmpMenuSelection', { fg = c.bg, bg = c.statusline1 })
+  hi('BlinkCmpScrollBarThumb', { bg = c.river_stone })
+  hi('BlinkCmpScrollBarGutter', { bg = c.bg2 })
+  hi('BlinkCmpLabel', { fg = c.fg })
+  hi('BlinkCmpLabelDeprecated', { fg = c.light_pebble, strikethrough = true })
+  hi('BlinkCmpLabelMatch', { fg = c.olive, bold = true })
+  hi('BlinkCmpLabelDetail', { fg = c.light_pebble })
+  hi('BlinkCmpLabelDescription', { fg = c.light_pebble })
+  hi('BlinkCmpKind', { fg = c.honey })
+  hi('BlinkCmpKindText', { fg = c.fg })
+  hi('BlinkCmpKindMethod', { fg = c.olive })
+  hi('BlinkCmpKindFunction', { fg = c.blue_stone })
+  hi('BlinkCmpKindConstructor', { fg = c.olive })
+  hi('BlinkCmpKindField', { fg = c.storm_blue })
+  hi('BlinkCmpKindVariable', { fg = c.deep_forest })
+  hi('BlinkCmpKindClass', { fg = c.sage_green })
+  hi('BlinkCmpKindInterface', { fg = c.sage_green })
+  hi('BlinkCmpKindModule', { fg = c.honey })
+  hi('BlinkCmpKindProperty', { fg = c.storm_blue })
+  hi('BlinkCmpKindUnit', { fg = c.dusty_purple })
+  hi('BlinkCmpKindValue', { fg = c.earth_brown })
+  hi('BlinkCmpKindEnum', { fg = c.sage_green })
+  hi('BlinkCmpKindKeyword', { fg = c.terracotta })
+  hi('BlinkCmpKindSnippet', { fg = c.aqua })
+  hi('BlinkCmpKindColor', { fg = c.honey })
+  hi('BlinkCmpKindFile', { fg = c.olive })
+  hi('BlinkCmpKindReference', { fg = c.aqua })
+  hi('BlinkCmpKindFolder', { fg = c.olive })
+  hi('BlinkCmpKindEnumMember', { fg = c.storm_blue })
+  hi('BlinkCmpKindConstant', { fg = c.earth_brown })
+  hi('BlinkCmpKindStruct', { fg = c.sage_green })
+  hi('BlinkCmpKindEvent', { fg = c.warm_orange })
+  hi('BlinkCmpKindOperator', { fg = c.charcoal })
+  hi('BlinkCmpKindTypeParameter', { fg = c.honey })
+  hi('BlinkCmpDoc', { fg = c.fg, bg = c.bg2 })
+  hi('BlinkCmpDocBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('BlinkCmpDocSeparator', { fg = c.light_pebble, bg = c.bg2 })
+  hi('BlinkCmpSignatureHelp', { fg = c.fg, bg = c.bg2 })
+  hi('BlinkCmpSignatureHelpBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('BlinkCmpSignatureHelpActiveParameter', { underline = true, sp = c.terracotta })
+  hi('BlinkCmpGhostText', { fg = c.bg5 })
+
+  -- fzf-lua
+  hi('FzfLuaNormal', { fg = c.fg, bg = c.bg_dim })
+  hi('FzfLuaBorder', { fg = c.light_pebble, bg = c.bg_dim })
+  hi('FzfLuaTitle', { fg = c.warm_orange, bold = true })
+  hi('FzfLuaPreviewNormal', { fg = c.fg, bg = c.bg })
+  hi('FzfLuaPreviewBorder', { fg = c.light_pebble, bg = c.bg })
+  hi('FzfLuaPreviewTitle', { fg = c.warm_orange, bold = true })
+  hi('FzfLuaCursorLine', { bg = c.bg1 })
+  hi('FzfLuaCursorLineNr', { fg = c.light_pebble, bg = c.bg1 })
+  hi('FzfLuaSearch', { fg = c.bg, bg = c.olive })
+  hi('FzfLuaHeaderBind', { fg = c.olive })
+  hi('FzfLuaHeaderText', { fg = c.warm_orange })
+  hi('FzfLuaPathLineNr', { fg = c.light_pebble })
+  hi('FzfLuaPathColNr', { fg = c.light_pebble })
+  hi('FzfLuaBufName', { fg = c.olive })
+  hi('FzfLuaBufNr', { fg = c.dusty_purple })
+  hi('FzfLuaBufFlagCur', { fg = c.olive })
+  hi('FzfLuaBufFlagAlt', { fg = c.storm_blue })
+  hi('FzfLuaFzfNormal', { fg = c.fg })
+  hi('FzfLuaFzfCursorLine', { bg = c.bg1 })
+  hi('FzfLuaFzfMatch', { fg = c.olive, bold = true })
+  hi('FzfLuaFzfBorder', { fg = c.light_pebble })
+  hi('FzfLuaFzfGutter', { bg = c.bg_dim })
+  hi('FzfLuaFzfPointer', { fg = c.brick })
+  hi('FzfLuaFzfMarker', { fg = c.honey })
+  hi('FzfLuaFzfPrompt', { fg = c.olive })
+  hi('FzfLuaFzfQuery', { fg = c.fg })
+
+  -- nvim-dap
+  hi('DapBreakpoint', { fg = c.brick })
+  hi('DapBreakpointCondition', { fg = c.honey })
+  hi('DapLogPoint', { fg = c.storm_blue })
+  hi('DapStopped', { fg = c.olive, bg = c.bg_yellow })
+  hi('DapBreakpointRejected', { fg = c.light_pebble })
+
+  -- nvim-dap-ui
+  hi('DapUIScope', { fg = c.aqua })
+  hi('DapUIType', { fg = c.sage_green })
+  hi('DapUIValue', { fg = c.fg })
+  hi('DapUIVariable', { fg = c.deep_forest })
+  hi('DapUIModifiedValue', { fg = c.honey, bold = true })
+  hi('DapUIDecoration', { fg = c.light_pebble })
+  hi('DapUIThread', { fg = c.olive })
+  hi('DapUIStoppedThread', { fg = c.brick })
+  hi('DapUISource', { fg = c.dusty_purple })
+  hi('DapUILineNumber', { fg = c.bg5 })
+  hi('DapUIFloatNormal', { fg = c.fg, bg = c.bg2 })
+  hi('DapUIFloatBorder', { fg = c.light_pebble, bg = c.bg2 })
+  hi('DapUIWatchesEmpty', { fg = c.light_pebble })
+  hi('DapUIWatchesValue', { fg = c.olive })
+  hi('DapUIWatchesError', { fg = c.brick })
+  hi('DapUIBreakpointsPath', { fg = c.storm_blue })
+  hi('DapUIBreakpointsInfo', { fg = c.olive })
+  hi('DapUIBreakpointsCurrentLine', { fg = c.olive, bold = true })
+  hi('DapUIBreakpointsDisabledLine', { fg = c.light_pebble })
+  hi('DapUICurrentFrameName', { fg = c.olive, bold = true })
+  hi('DapUIStepOver', { fg = c.storm_blue })
+  hi('DapUIStepInto', { fg = c.storm_blue })
+  hi('DapUIStepBack', { fg = c.storm_blue })
+  hi('DapUIStepOut', { fg = c.storm_blue })
+  hi('DapUIStop', { fg = c.brick })
+  hi('DapUIPlayPause', { fg = c.olive })
+  hi('DapUIRestart', { fg = c.olive })
+  hi('DapUIUnavailable', { fg = c.light_pebble })
+
+  -- neotest
+  hi('NeotestPassed', { fg = c.olive })
+  hi('NeotestFailed', { fg = c.coral })
+  hi('NeotestRunning', { fg = c.honey })
+  hi('NeotestSkipped', { fg = c.stone_grey })
+  hi('NeotestTest', { fg = c.fg })
+  hi('NeotestNamespace', { fg = c.aqua })
+  hi('NeotestFile', { fg = c.storm_blue })
+  hi('NeotestDir', { fg = c.olive })
+  hi('NeotestAdapterName', { fg = c.warm_orange, bold = true })
+  hi('NeotestTarget', { fg = c.brick })
+  hi('NeotestMarked', { fg = c.honey, bold = true })
+  hi('NeotestFocused', { underline = true })
+  hi('NeotestIndent', { fg = c.pale_stone })
+  hi('NeotestExpandMarker', { fg = c.light_pebble })
+  hi('NeotestWatching', { fg = c.honey })
+  hi('NeotestUnknown', { fg = c.light_pebble })
+  hi('NeotestBorder', { fg = c.light_pebble })
+
+  -- render-markdown
+  hi('RenderMarkdownH1', { fg = c.warm_orange, bold = true })
+  hi('RenderMarkdownH2', { fg = c.olive, bold = true })
+  hi('RenderMarkdownH3', { fg = c.honey, bold = true })
+  hi('RenderMarkdownH4', { fg = c.aqua, bold = true })
+  hi('RenderMarkdownH5', { fg = c.storm_blue, bold = true })
+  hi('RenderMarkdownH6', { fg = c.dusty_purple, bold = true })
+  hi('RenderMarkdownH1Bg', { bg = c.bg_yellow })
+  hi('RenderMarkdownH2Bg', { bg = c.bg_green })
+  hi('RenderMarkdownH3Bg', { bg = c.bg_yellow })
+  hi('RenderMarkdownH4Bg', { bg = c.bg_blue })
+  hi('RenderMarkdownH5Bg', { bg = c.bg_blue })
+  hi('RenderMarkdownH6Bg', { bg = c.bg_red })
+  hi('RenderMarkdownCode', { bg = c.bg1 })
+  hi('RenderMarkdownCodeInline', { bg = c.bg1 })
+  hi('RenderMarkdownCodeBorder', { fg = c.light_pebble, bg = c.bg1 })
+  hi('RenderMarkdownBullet', { fg = c.storm_blue })
+  hi('RenderMarkdownChecked', { fg = c.olive })
+  hi('RenderMarkdownUnchecked', { fg = c.sage })
+  hi('RenderMarkdownQuote', { fg = c.light_pebble })
+  hi('RenderMarkdownDash', { fg = c.bg4 })
+  hi('RenderMarkdownLink', { fg = c.aqua })
+  hi('RenderMarkdownMath', { fg = c.warm_amber })
+  hi('RenderMarkdownTableHead', { fg = c.olive })
+  hi('RenderMarkdownTableRow', { fg = c.fg })
+
+  -- nvim-ufo
+  hi('UfoFoldedEllipsis', { fg = c.stone_grey })
+
+  -- diffview
+  hi('DiffviewFilePanelTitle', { fg = c.warm_orange, bold = true })
+  hi('DiffviewFilePanelCounter', { fg = c.dusty_purple })
+  hi('DiffviewFilePanelFileName', { fg = c.fg })
+  hi('DiffviewFilePanelPath', { fg = c.light_pebble })
+  hi('DiffviewFilePanelRootPath', { fg = c.warm_orange })
+  hi('DiffviewFilePanelInsertions', { fg = c.olive })
+  hi('DiffviewFilePanelDeletions', { fg = c.brick })
+  hi('DiffviewDiffAdd', { bg = c.bg_green })
+  hi('DiffviewDiffDelete', { bg = c.bg_red })
+  hi('DiffviewDiffChange', { bg = c.bg_blue })
 end
 
 return M
