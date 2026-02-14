@@ -1,1 +1,1 @@
-require("earthtone").load()
+require('earthtone').load()
