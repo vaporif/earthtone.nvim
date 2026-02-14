@@ -20,7 +20,7 @@ The result: code that reads like ink on paper, not pixels on a screen.
 
 ## Screenshots
 
-<!-- TODO: add screenshots -->
+<img width="1712" height="1054" alt="Screenshot 2026-02-14 at 22 53 12" src="https://github.com/user-attachments/assets/cabab29e-aa2b-46de-a545-e61e8f91adc9" />
 
 ## Installation
 
