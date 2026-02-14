@@ -64,20 +64,4 @@ return {
   statusline1 = '#5c6a72',
   statusline2 = '#708c7e',
   statusline3 = '#7a8478',
-
-  -- Rust
-  rust_keyword = '#8b5a3c',
-  rust_conditional = '#9d6b47',
-  rust_modifier = '#b87333',
-  rust_wood = '#8b7355',
-  rust_storage = '#a67c52',
-  rust_import = '#a17c59',
-  rust_method = '#7a8a7f',
-  rust_type = '#4a6b5d',
-  rust_function = '#4b6b6f',
-  rust_call = '#8b7d6b',
-  rust_operator = '#8a7766',
-  rust_constant = '#a08770',
-  rust_float = '#9a8f85',
-  rust_control_flow = '#846347',
 }

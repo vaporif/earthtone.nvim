@@ -420,7 +420,7 @@ function M.load()
   hi('DiagnosticSignInfo', { fg = c.storm_blue })
   hi('DiagnosticSignHint', { fg = c.dusty_purple })
 
-  hi('ErrorFloat', { fg = c.rust_conditional })
+  hi('ErrorFloat', { fg = c.warm_orange })
 
   ---------------------------------------------------------------------------
   -- Treesitter context
@@ -482,41 +482,6 @@ function M.load()
   ---------------------------------------------------------------------------
   hi('BlinkPairsWarm1', { fg = c.warm_orange })
   hi('BlinkPairsWarm2', { fg = c.river_stone })
-
-  ---------------------------------------------------------------------------
-  -- Rust overrides (from on_highlights)
-  ---------------------------------------------------------------------------
-  hi('@keyword.rust', { fg = c.rust_keyword })
-  hi('@keyword.conditional.rust', { fg = c.rust_conditional })
-  hi('@keyword.modifier.rust', { fg = c.rust_modifier })
-  hi('@keyword.function.rust', { fg = c.rust_wood })
-  hi('@keyword.storage.rust', { fg = c.rust_storage })
-  hi('@keyword.import.rust', { fg = c.rust_import })
-  hi('@type.rust', { fg = c.rust_type })
-  hi('@function.rust', { fg = c.rust_function })
-  hi('@function.method.call.rust', { fg = c.rust_call })
-  hi('@attribute.rust', { fg = c.dusty_purple })
-  hi('@operator.rust', { fg = c.rust_operator })
-  hi('@label.rust', { fg = c.dusty_purple })
-  hi('@constant.builtin.rust', { fg = c.rust_constant })
-  hi('@number.float.rust', { fg = c.rust_float })
-
-  -- Rust LSP semantic tokens (override generic LSP types for Rust)
-  hi('@lsp.type.type.rust', { fg = c.rust_type })
-  hi('@lsp.type.struct.rust', { fg = c.rust_type })
-  hi('@lsp.type.enum.rust', { fg = c.rust_type })
-  hi('@lsp.type.interface.rust', { fg = c.rust_type })
-  hi('@lsp.type.typeParameter.rust', { fg = c.rust_type })
-  hi('@lsp.type.keyword.rust', { fg = c.rust_keyword })
-  hi('@lsp.type.function.rust', { fg = c.rust_function })
-  hi('@lsp.type.method.rust', { fg = c.rust_method })
-  hi('@lsp.type.macro.rust', { fg = c.dusty_purple })
-  hi('@lsp.type.namespace.rust', { fg = c.honey })
-  hi('@lsp.type.property.rust', { fg = c.storm_blue })
-  hi('@lsp.type.variable.rust', { fg = c.deep_forest })
-  hi('@lsp.type.parameter.rust', { fg = c.clay })
-  hi('@lsp.typemod.keyword.controlFlow.rust', { fg = c.rust_control_flow })
-  hi('@lsp.mod.constant.rust', { fg = c.rust_storage })
 
   ---------------------------------------------------------------------------
   -- NeoTree (everforest defaults with user palette)
