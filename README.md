@@ -103,14 +103,19 @@ All colors are named and defined in a single palette module (`lua/earthtone/pale
 
 ## Supported plugins
 
-- [blink.cmp](https://github.com/saghen/blink.cmp) (pairs)
+- [blink.cmp](https://github.com/saghen/blink.cmp) (completion + pairs)
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim)
 - [flash.nvim](https://github.com/folke/flash.nvim)
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [neotest](https://github.com/nvim-neotest/neotest)
 - [noice.nvim](https://github.com/folke/noice.nvim)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap) + [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 - [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
