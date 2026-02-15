@@ -14,7 +14,7 @@ return function(hi, c)
   hi('@constructor.lua', { fg = c.type_deep })
   hi('@operator.lua', { fg = c.operator_warm })
   hi('@constant.builtin.lua', { fg = c.constant_warm })
-  hi('@variable.builtin.lua', { fg = c.driftwood })
+  hi('@variable.builtin.lua', { fg = c.weathered_oak })
   hi('@number.float.lua', { fg = c.float_muted })
 
   hi('@lsp.type.type.lua', { fg = c.type_deep })

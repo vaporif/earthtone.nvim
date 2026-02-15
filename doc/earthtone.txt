@@ -18,7 +18,7 @@ earthtone is a warm, natural light colorscheme designed to be easy on the
 eyes during long coding sessions.
 
 Every color is derived from natural materials -- terracotta, sage, sandstone,
-moss, driftwood, river stone. The warm parchment background (#e8dcc6) reduces
+moss, weathered oak, river stone. The warm parchment background (#e8dcc6) reduces
 blue light emission compared to pure white, while muted earthy syntax colors
 maintain clear distinction without competing for attention.
 
@@ -86,7 +86,7 @@ ACCENTS ~
   `olive`          #89a05d   Success, strings, additions
   `aqua`           #71958e   Constants, links, macros
   `storm_blue`     #70888b   Identifiers, hints, links
-  `dusty_purple`   #9b7d8a   Numbers, booleans, preprocessor
+  `plum`           #7f616e   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords
   `coral`          #b96361   Exceptions, comment errors
   `sage`           #748a72   Info, TODO
@@ -97,12 +97,12 @@ SYNTAX BASE ~
   `blue_stone`     #3b5b5f   Function definitions
   `sage_green`     #3d593c   Types (treesitter)
   `earth_brown`    #907760   Constants
-  `warm_amber`     #a8814f   Numbers
+  `dark_amber`     #795d39   Numbers
   `moss`           #5a6a4e   Strings (treesitter)
   `charcoal`       #5a4746   Operators
-  `driftwood`      #8a8275   Builtin variables
+  `weathered_oak`  #6f695f   Builtin variables
   `clay`           #7a5a4a   Parameters
-  `petal`          #b8a0a8   Floats
+  `dried_rose`     #8d6975   Floats
   `bark`           #7a6d5b   Builtin functions
   `twig`           #7a6756   Special punctuation
 
@@ -197,11 +197,11 @@ A matching lualine theme is bundled. It loads automatically: >lua
 <
 
 Mode colors:
-  normal    `statusline1`  (#57646b)
+  normal    `statusline1`  (#4b565d)
   insert    `sage`         (#708c7e)
-  visual    `dusty_purple` (#9b7d8a)
+  visual    `plum`         (#7f616e)
   replace   `coral`        (#c85552)
-  command   `warm_amber`   (#a8814f)
+  command   `dark_amber`   (#795d39)
   terminal  `olive`        (#89a05d)
 
 ==============================================================================

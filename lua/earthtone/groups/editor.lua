@@ -5,7 +5,7 @@ return function(hi, c)
   vim.g.terminal_color_2 = c.olive
   vim.g.terminal_color_3 = c.honey
   vim.g.terminal_color_4 = c.storm_blue
-  vim.g.terminal_color_5 = c.dusty_purple
+  vim.g.terminal_color_5 = c.plum
   vim.g.terminal_color_6 = c.aqua
   vim.g.terminal_color_7 = c.pale_stone
   vim.g.terminal_color_8 = c.stone_grey
@@ -13,7 +13,7 @@ return function(hi, c)
   vim.g.terminal_color_10 = c.olive
   vim.g.terminal_color_11 = c.warm_orange
   vim.g.terminal_color_12 = c.storm_blue
-  vim.g.terminal_color_13 = c.dusty_purple
+  vim.g.terminal_color_13 = c.plum
   vim.g.terminal_color_14 = c.aqua
   vim.g.terminal_color_15 = c.bg_dim
 
@@ -101,5 +101,5 @@ return function(hi, c)
   hi('SpellBad', { undercurl = true, sp = c.brick })
   hi('SpellCap', { undercurl = true, sp = c.honey })
   hi('SpellLocal', { undercurl = true, sp = c.aqua })
-  hi('SpellRare', { undercurl = true, sp = c.dusty_purple })
+  hi('SpellRare', { undercurl = true, sp = c.plum })
 end

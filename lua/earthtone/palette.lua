@@ -1,6 +1,6 @@
 return {
   -- Foreground
-  fg = '#57646b',
+  fg = '#4b565d',
   comment = '#9da9a0',
 
   -- Backgrounds (bg -> bg5: progressively darker, bg_dim: lighter than bg)
@@ -28,7 +28,7 @@ return {
   olive = '#89a05d',
   aqua = '#71958e',
   storm_blue = '#70888b',
-  dusty_purple = '#9b7d8a',
+  plum = '#7f616e',
   terracotta = '#7a4f3a',
   coral = '#b96361',
   sage = '#748a72',
@@ -43,12 +43,12 @@ return {
   blue_stone = '#3b5b5f',
   sage_green = '#3d593c',
   earth_brown = '#907760',
-  warm_amber = '#a8814f',
+  dark_amber = '#795d39',
   moss = '#5a6a4e',
   charcoal = '#5a4746',
-  driftwood = '#8a8275',
+  weathered_oak = '#6f695f',
   clay = '#7a5a4a',
-  petal = '#b8a0a8',
+  dried_rose = '#8d6975',
   bark = '#7a6d5b',
   twig = '#7a6756',
 
@@ -60,7 +60,7 @@ return {
   -- UI chrome
   light_pebble = '#9da9a0',
   pale_stone = '#b5c1b8',
-  statusline1 = '#57646b',
+  statusline1 = '#4b565d',
   statusline3 = '#7a8478',
 
   -- Semantic variants (reusable per-language overrides)

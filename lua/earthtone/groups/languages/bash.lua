@@ -11,6 +11,6 @@ return function(hi, c)
   hi('@operator.bash', { fg = c.operator_warm })
   hi('@constant.builtin.bash', { fg = c.constant_warm })
   hi('@variable.bash', { fg = c.deep_forest })
-  hi('@variable.builtin.bash', { fg = c.driftwood })
+  hi('@variable.builtin.bash', { fg = c.weathered_oak })
   hi('@punctuation.special.bash', { fg = c.operator_warm })
 end

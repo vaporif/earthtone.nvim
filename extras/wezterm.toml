@@ -1,18 +1,18 @@
 [colors]
-foreground = "#57646b"
+foreground = "#4b565d"
 background = "#e8dcc6"
 cursor_fg = "#e8dcc6"
-cursor_bg = "#57646b"
-selection_fg = "#57646b"
+cursor_bg = "#4b565d"
+selection_fg = "#4b565d"
 selection_bg = "#d5c9b8"
 
 ansi = [
-  "#57646b",  # black (fg)
+  "#4b565d",  # black (fg)
   "#ab605d",  # red (brick)
   "#89a05d",  # green (olive)
   "#bb9c68",  # yellow (honey)
   "#70888b",  # blue (storm_blue)
-  "#9b7d8a",  # magenta (dusty_purple)
+  "#7f616e",  # magenta (plum)
   "#71958e",  # cyan (aqua)
   "#b5c1b8",  # white (pale_stone)
 ]
@@ -23,7 +23,7 @@ brights = [
   "#89a05d",  # bright green (olive)
   "#c08563",  # bright yellow (warm_orange)
   "#70888b",  # bright blue (storm_blue)
-  "#9b7d8a",  # bright magenta (dusty_purple)
+  "#7f616e",  # bright magenta (plum)
   "#71958e",  # bright cyan (aqua)
   "#f8f1de",  # bright white (bg_dim)
 ]
