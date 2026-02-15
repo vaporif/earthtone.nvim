@@ -1,4 +1,4 @@
-local c = require 'earthtone.palette'
+local c = require('earthtone.palette').get(vim.o.background)
 
 return {
   normal = {

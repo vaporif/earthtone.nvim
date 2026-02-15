@@ -1,4 +1,4 @@
-*earthtone.txt*  A warm, natural light colorscheme for Neovim
+*earthtone.txt*  A warm, natural colorscheme for Neovim (light & dark)
 
 ==============================================================================
 CONTENTS                                                  *earthtone-contents*
@@ -6,24 +6,30 @@ CONTENTS                                                  *earthtone-contents*
   1. Introduction .......................... |earthtone-introduction|
   2. Installation .......................... |earthtone-installation|
   3. Usage ................................. |earthtone-usage|
-  4. Palette ................................ |earthtone-palette|
-  5. Supported plugins ..................... |earthtone-plugins|
-  6. Customizing ........................... |earthtone-customizing|
-  7. Lualine ................................ |earthtone-lualine|
+  4. Configuration ......................... |earthtone-configuration|
+  5. Palette ................................ |earthtone-palette|
+  6. Supported plugins ..................... |earthtone-plugins|
+  7. Customizing ........................... |earthtone-customizing|
+  8. Lualine ................................ |earthtone-lualine|
 
 ==============================================================================
 1. INTRODUCTION                                       *earthtone-introduction*
 
-earthtone is a warm, natural light colorscheme designed to be easy on the
-eyes during long coding sessions.
+earthtone is a warm, natural colorscheme designed to be easy on the eyes
+during long coding sessions. Available in both light and dark variants.
 
 Every color is derived from natural materials -- terracotta, sage, sandstone,
-moss, rosewood, river stone. The warm parchment background (#e8dcc6) reduces
-blue light emission compared to pure white, while muted earthy syntax colors
-maintain clear distinction without competing for attention.
+moss, rosewood, river stone. Both variants use warm tones (not cool grey)
+to preserve the earthtone identity.
+
+Light variant: warm parchment background (#e8dcc6) reduces blue light
+emission compared to pure white.
+
+Dark variant: warm dark brown background (#2b2826) inspired by Everforest
+dark's philosophy -- comfortable and muted, not stark black.
 
 Design principles:
-- Warm parchment background instead of stark white
+- Warm backgrounds (parchment light, dark brown dark)
 - Low-saturation earth tones for syntax
 - WCAG AA contrast ratios for primary syntax colors
 - 5 distinct hue lanes for semantic clarity
@@ -54,15 +60,40 @@ lazy.nvim: >lua
 
 The palette module is available at: >lua
   local palette = require('earthtone.palette')
+  local colors = palette.get('light')  -- or 'dark'
 <
 
 ==============================================================================
-4. PALETTE                                                 *earthtone-palette*
+4. CONFIGURATION                                   *earthtone-configuration*
 
-All colors are named and defined in `lua/earthtone/palette.lua`.
+Use `setup()` before loading to configure the variant: >lua
+  require('earthtone').setup({
+    background = 'dark',  -- 'light', 'dark', or 'auto' (default)
+  })
+  vim.cmd.colorscheme('earthtone')
+<
 
+                                                  *earthtone-background*
+`background` ~
+  `'auto'`   (default) Uses `vim.o.background` to pick light or dark
+  `'light'`  Always use the light palette
+  `'dark'`   Always use the dark palette
+
+When set to `'auto'`, you can switch variants at runtime: >vim
+  :set background=dark
+  :colorscheme earthtone
+<
+
+==============================================================================
+5. PALETTE                                                 *earthtone-palette*
+
+Palettes are defined in `lua/earthtone/palette/light.lua` and
+`lua/earthtone/palette/dark.lua`. The selector at `lua/earthtone/palette.lua`
+returns the appropriate table via `require('earthtone.palette').get(variant)`.
+
+LIGHT PALETTE ~
+                                                *earthtone-palette-light*
 BACKGROUNDS ~
-                                                     *earthtone-palette-bg*
   `bg`             #e8dcc6   Main background (warm parchment)
   `bg1`            #eae4ca   Subtle alternate
   `bg2`            #e5dfc5   Float/popup background
@@ -79,7 +110,6 @@ BACKGROUNDS ~
   `bg_yellow`      #faf3e0   Stopped/warning background
 
 ACCENTS ~
-                                                 *earthtone-palette-accent*
   `brick`          #924e4c   Errors, deletions, search
   `warm_orange`    #b06d47   Special, labels, operators
   `toffee`          #987945   Warnings, types, modules
@@ -91,34 +121,48 @@ ACCENTS ~
   `coral`          #9d4746   Exceptions, comment errors
   `sage`           #6f836d   Info, TODO
 
-SYNTAX BASE ~
-                                                 *earthtone-palette-syntax*
-  `deep_forest`    #4d5b56   Variables
-  `sage_green`     #3d593c   Types (treesitter base)
-  `moss`           #59664e   Strings
-  `charcoal`       #534241   Operators
-  `clay`           #7a5a4a   Parameters
-  `rosewood`       #6e4348   Constants, numbers, booleans, floats
+SYNTAX ~
+  `fg`             #3e474d   Foreground text
+  `keyword_warm`   #84583b   Keywords (amber lane)
+  `function_deep`  #3b5a6f   Functions (slate-blue lane)
+  `type_deep`      #47695b   Types (forest-green lane)
+  `rosewood`       #6e4348   Constants, numbers (rose lane)
+  `charcoal`       #534241   Operators (neutral lane)
 
-SYNTAX STRUCTURAL ~
-                                             *earthtone-palette-structural*
-  `stone_grey`     #72817a   Punctuation, delimiters
-  `river_stone`    #859289   Fold text
-  `lichen`         #8d9d8d   Indent guides
+DARK PALETTE ~
+                                                *earthtone-palette-dark*
+BACKGROUNDS ~
+  `bg`             #2b2826   Main background (warm dark brown)
+  `bg1`            #302d2a   Subtle alternate
+  `bg2`            #363230   Float/popup background
+  `bg3`            #3d3936   Statusline, tabline
+  `bg4`            #45413d   Separators, non-text
+  `bg5`            #504b47   Line numbers, conceal
+  `bg_dim`         #242120   Sidebars, panels
+  `bg_visual`      #4a4440   Visual selection
 
-SEMANTIC VARIANTS ~
-                                                *earthtone-palette-semantic*
-Five distinct hue lanes for per-language overrides (Rust, TypeScript/TSX,
-JavaScript, Go, Python, C/C++, Lua, Nix, Bash, HTML, CSS, JSON, YAML, TOML):
+ACCENTS ~
+  `brick`          #c37c7a   Errors, deletions, search
+  `warm_orange`    #d9956e   Special, labels, operators
+  `toffee`          #c9a56c   Warnings, types, modules
+  `olive`          #a0b26e   Success, strings, additions
+  `teal`           #8db8b0   Constants, links, macros
+  `storm_blue`     #94b0b3   Identifiers, hints, links
+  `plum`           #a88596   Numbers, booleans, preprocessor
+  `terracotta`     #b6836d   Keywords
+  `coral`          #d07574   Exceptions, comment errors
+  `sage`           #98b28e   Info, TODO
 
-  `keyword_warm`       #84583b   Amber (25deg) -- all keyword types
-  `type_deep`          #47695b   Forest green (155deg) -- types, structs, enums
-  `function_deep`      #3b5a6f   Slate blue (204deg) -- functions, methods, calls
-  `rosewood`           #6e4348   Muted rose (353deg) -- constants, numbers
-  `charcoal`           #534241   Neutral (3deg) -- operators
+SYNTAX ~
+  `fg`             #d3c6aa   Foreground text
+  `keyword_warm`   #c08a64   Keywords (amber lane)
+  `function_deep`  #6d9ab5   Functions (slate-blue lane)
+  `type_deep`      #7bab94   Types (forest-green lane)
+  `rosewood`       #b28388   Constants, numbers (rose lane)
+  `charcoal`       #9c8b89   Operators (neutral lane)
 
 ==============================================================================
-5. SUPPORTED PLUGINS                                      *earthtone-plugins*
+6. SUPPORTED PLUGINS                                      *earthtone-plugins*
 
 Highlight groups are defined for the following plugins:
 
@@ -160,11 +204,12 @@ Treesitter ~
   - Per-language overrides (Rust, TS, Go, Python, C/C++, Lua, Nix, Bash, JSON, YAML)
 
 ==============================================================================
-6. CUSTOMIZING                                         *earthtone-customizing*
+7. CUSTOMIZING                                         *earthtone-customizing*
 
 Use `setup()` before loading to override palette colors or highlights: >lua
   require('earthtone').setup({
-    palette = { bg = '#f0e8d4' },
+    background = 'dark',
+    palette = { bg = '#1e1c1a' },
     overrides = { Comment = { fg = '#8a9a8e', italic = false } },
   })
   vim.cmd.colorscheme('earthtone')
@@ -175,25 +220,26 @@ using that color will pick up the change. Highlight overrides are applied
 last, after all groups are set.
 
 Access the palette directly: >lua
-  local c = require('earthtone.palette')
+  local c = require('earthtone.palette').get('dark')
 <
 
 ==============================================================================
-7. LUALINE                                               *earthtone-lualine*
+8. LUALINE                                               *earthtone-lualine*
 
-A matching lualine theme is bundled. It loads automatically: >lua
+A matching lualine theme is bundled. It loads automatically and adapts
+to the current background variant: >lua
   require('lualine').setup {
     options = { theme = 'earthtone' },
   }
 <
 
-Mode colors:
-  normal    `statusline1`  (#3e474d)
-  insert    `sage`         (#708c7e)
-  visual    `plum`         (#7f616e)
-  replace   `coral`        (#c85552)
-  command   `terracotta`   (#7a4f3a)
-  terminal  `olive`        (#89a05d)
+Mode colors (adapted per variant):
+  normal    `statusline1`
+  insert    `sage`
+  visual    `plum`
+  replace   `coral`
+  command   `terracotta`
+  terminal  `olive`
 
 ==============================================================================
 vim:tw=78:ts=8:ft=help:norl:

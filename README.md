@@ -1,8 +1,8 @@
 # earthtone.nvim
 
-A warm, natural light colorscheme for Neovim.
+A warm, natural colorscheme for Neovim — light & dark.
 
-Most themes optimize for looking good in screenshots. earthtone optimizes for staring at code all day — natural material colors (terracotta, moss, sandstone, driftwood) on a warm parchment background (`#e8dcc6`). Our eyes have been looking at dirt, leaves, and rocks for a few million years, so these are easy to process for hours. Distinct enough to tell your keywords from your strings, muted enough to stay comfortable.
+Most themes optimize for looking good in screenshots. earthtone optimizes for staring at code all day — natural material colors (terracotta, moss, sandstone, driftwood) on warm backgrounds. Our eyes have been looking at dirt, leaves, and rocks for a few million years, so these are easy to process for hours. Distinct enough to tell your keywords from your strings, muted enough to stay comfortable.
 
 Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone takes the same gentle approach but shifts warmer (parchment bg instead of green-gray, clay/amber syntax instead of botanical greens) and adds per-language tuning for Rust, TypeScript, Go, Python, C/C++, Lua, Nix, Bash, JSON, and YAML.
 <img width="1717" height="1053" alt="Screenshot 2026-02-15 at 12 23 12" src="https://github.com/user-attachments/assets/8acef1ae-4e30-428c-b66e-8e7298855e34" />
@@ -24,6 +24,20 @@ Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone ta
 }
 ```
 
+### Dark variant
+
+```lua
+{
+  'vaporif/earthtone.nvim',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require('earthtone').setup({ background = 'dark' })
+    vim.cmd.colorscheme('earthtone')
+  end,
+}
+```
+
 ### Lualine
 
 ```lua
@@ -32,9 +46,26 @@ require('lualine').setup {
 }
 ```
 
+## Configuration
+
+```lua
+require('earthtone').setup({
+  background = 'auto',  -- 'light', 'dark', or 'auto' (default)
+  palette = {},          -- override individual palette colors
+  overrides = {},        -- override highlight groups
+})
+vim.cmd.colorscheme('earthtone')
+```
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `background` | `'auto'` | `'light'`, `'dark'`, or `'auto'` (follows `vim.o.background`) |
+| `palette` | `{}` | Merge overrides into the selected palette |
+| `overrides` | `{}` | Override highlight groups after all groups are applied |
+
 ## Palette
 
-Defined in `lua/earthtone/palette.lua`.
+### Light (`#e8dcc6` background)
 
 | Name | Hex | Role |
 |------|-----|------|
@@ -52,11 +83,30 @@ Defined in `lua/earthtone/palette.lua`.
 | `toffee` | `#987945` | Warnings |
 | `olive` | `#71844d` | Success |
 
+### Dark (`#2b2826` background)
+
+| Name | Hex | Role |
+|------|-----|------|
+| `bg` | `#2b2826` | Background |
+| `fg` | `#d3c6aa` | Foreground |
+| `keyword_warm` | `#c08a64` | Keywords |
+| `function_deep` | `#6d9ab5` | Functions |
+| `type_deep` | `#7bab94` | Types |
+| `rosewood` | `#b28388` | Constants, numbers |
+| `moss` | `#8da47a` | Strings |
+| `charcoal` | `#9c8b89` | Operators |
+| `deep_forest` | `#8aa89e` | Variables |
+| `plum` | `#a88596` | Macros |
+| `coral` | `#d07574` | Errors |
+| `toffee` | `#c9a56c` | Warnings |
+| `olive` | `#a0b26e` | Success |
+
 Override palette colors or highlight groups via `setup()`:
 
 ```lua
 require('earthtone').setup({
-  palette = { bg = '#f0e8d4' },
+  background = 'dark',
+  palette = { bg = '#1e1c1a' },
   overrides = { Comment = { fg = '#8a9a8e', italic = false } },
 })
 vim.cmd.colorscheme('earthtone')
@@ -71,7 +121,8 @@ Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter cove
 ## Extras
 
 Terminal themes in `extras/`:
-- **WezTerm** — copy `extras/wezterm.toml` to `~/.config/wezterm/colors/earthtone.toml`
+- **WezTerm (light)** — copy `extras/wezterm.toml` to `~/.config/wezterm/colors/earthtone.toml`
+- **WezTerm (dark)** — copy `extras/wezterm_dark.toml` to `~/.config/wezterm/colors/earthtone-dark.toml`
 
 ## Development
 
