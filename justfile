@@ -22,6 +22,10 @@ check-typos:
 lint-actions:
     actionlint
 
+# Enable git hooks
+setup-hooks:
+    git config core.hooksPath .githooks
+
 # Validate colorscheme loads without errors
 validate:
     nvim --headless -u NONE -c "set rtp+=." -c "lua require('earthtone').load()" -c "qa"
