@@ -116,20 +116,20 @@ ACCENTS ~
   `brick`          #a2362f   Errors, deletions, search
   `warm_orange`    #a66130   Special, labels, operators
   `toffee`          #725926   Warnings, types, modules
-  `olive`          #4f7627   Success, strings, additions
+  `olive`          #607530   Success, strings, additions
   `teal`           #2c7670   Constants, links, macros
   `storm_blue`     #2c6376   Identifiers, hints, links
-  `plum`           #973970   Numbers, booleans, preprocessor
+  `plum`           #8c3f65   Attributes, macros, preprocessor
   `terracotta`     #8a4c28   Keywords
   `coral`          #a03935   Exceptions, comment errors
-  `sage`           #44823e   Info, TODO
+  `sage`           #4e7a4a   Info, TODO
 
 SYNTAX ~
   `fg`             #3e474d   Foreground text
   `keyword_warm`   #93461a   Keywords (amber lane)
-  `function_deep`  #1c5ea0   Functions (slate-blue lane)
-  `type_deep`      #12683d   Types (forest-green lane)
-  `rosewood`       #9b3a4a   Constants, numbers (rose lane)
+  `function_deep`  #2c5d80   Functions (slate-blue lane)
+  `type_deep`      #1a6840   Types (forest-green lane)
+  `rosewood`       #934045   Constants, numbers (rose lane)
   `charcoal`       #534241   Operators (neutral lane)
 
 DARK PALETTE ~

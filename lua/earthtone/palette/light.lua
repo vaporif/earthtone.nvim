@@ -25,26 +25,26 @@ return {
   brick = '#a2362f',
   warm_orange = '#a66130',
   toffee = '#725926',
-  olive = '#4f7627',
+  olive = '#607530',
   teal = '#2c7670',
   storm_blue = '#2c6376',
-  plum = '#973970',
+  plum = '#8c3f65',
   terracotta = '#8a4c28',
   coral = '#a03935',
-  sage = '#44823e',
+  sage = '#4e7a4a',
 
   -- Link targets (used by plugins that link to named highlight groups)
   red = '#9c3934',
   orange = '#c2591e',
-  purple = '#923e61',
+  purple = '#7a4668',
 
   -- Syntax base
   deep_forest = '#306352',
-  sage_green = '#276731',
+  sage_green = '#3a6835',
   moss = '#42632a',
   charcoal = '#534241',
   clay = '#7d502f',
-  rosewood = '#9b3a4a',
+  rosewood = '#934045',
 
   -- Syntax structural (punctuation, operators, line numbers)
   stone_grey = '#72817a',
@@ -59,6 +59,6 @@ return {
 
   -- Semantic variants (per-language overrides, 3 hue lanes)
   keyword_warm = '#93461a',
-  type_deep = '#12683d',
-  function_deep = '#1c5ea0',
+  type_deep = '#1a6840',
+  function_deep = '#2c5d80',
 }

@@ -74,16 +74,16 @@ require('earthtone').setup({
 | `bg` | `#e8dcc6` | Background |
 | `fg` | `#3e474d` | Foreground |
 | `keyword_warm` | `#93461a` | Keywords |
-| `function_deep` | `#1c5ea0` | Functions |
-| `type_deep` | `#12683d` | Types |
-| `rosewood` | `#9b3a4a` | Constants, numbers |
+| `function_deep` | `#2c5d80` | Functions |
+| `type_deep` | `#1a6840` | Types |
+| `rosewood` | `#934045` | Constants, numbers |
 | `moss` | `#42632a` | Strings |
 | `charcoal` | `#534241` | Operators |
 | `deep_forest` | `#306352` | Variables |
-| `plum` | `#973970` | Macros |
+| `plum` | `#8c3f65` | Macros |
 | `coral` | `#a03935` | Errors |
 | `toffee` | `#725926` | Warnings |
-| `olive` | `#4f7627` | Success |
+| `olive` | `#607530` | Success |
 
 ### Dark (`#2b2826` background)
 
