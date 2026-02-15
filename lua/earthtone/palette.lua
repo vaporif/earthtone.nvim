@@ -22,16 +22,16 @@ return {
   bg_reference_write = '#d6c8ac',
 
   -- Accent (primary palette colors used across all highlight groups)
-  brick = '#b85450',
+  brick = '#ab605d',
   warm_orange = '#c08563',
-  honey = '#c9a05a',
+  honey = '#bb9c68',
   olive = '#89a05d',
-  aqua = '#6b9b91',
-  storm_blue = '#6b8b8f',
+  aqua = '#71958e',
+  storm_blue = '#70888b',
   dusty_purple = '#9b7d8a',
   terracotta = '#7a4f3a',
-  coral = '#c85552',
-  sage = '#708c7e',
+  coral = '#b96361',
+  sage = '#748a72',
 
   -- Link targets (used by plugins that link to named highlight groups)
   red = '#a84440',
@@ -41,7 +41,7 @@ return {
   -- Syntax base
   deep_forest = '#4d5b56',
   blue_stone = '#3b5b5f',
-  sage_green = '#3a5b4d',
+  sage_green = '#3d593c',
   earth_brown = '#907760',
   warm_amber = '#a8814f',
   moss = '#5a6a4e',

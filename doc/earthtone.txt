@@ -80,22 +80,22 @@ BACKGROUNDS ~
 
 ACCENTS ~
                                                  *earthtone-palette-accent*
-  `brick`          #b85450   Errors, deletions, search
+  `brick`          #ab605d   Errors, deletions, search
   `warm_orange`    #c08563   Special, labels, operators
-  `honey`          #c9a05a   Warnings, types, modules
+  `honey`          #bb9c68   Warnings, types, modules
   `olive`          #89a05d   Success, strings, additions
-  `aqua`           #6b9b91   Constants, links, macros
-  `storm_blue`     #6b8b8f   Identifiers, hints, links
+  `aqua`           #71958e   Constants, links, macros
+  `storm_blue`     #70888b   Identifiers, hints, links
   `dusty_purple`   #9b7d8a   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords
-  `coral`          #c85552   Exceptions, comment errors
-  `sage`           #708c7e   Info, TODO
+  `coral`          #b96361   Exceptions, comment errors
+  `sage`           #748a72   Info, TODO
 
 SYNTAX BASE ~
                                                  *earthtone-palette-syntax*
   `deep_forest`    #4d5b56   Variables
   `blue_stone`     #3b5b5f   Function definitions
-  `sage_green`     #3a5b4d   Types (treesitter)
+  `sage_green`     #3d593c   Types (treesitter)
   `earth_brown`    #907760   Constants
   `warm_amber`     #a8814f   Numbers
   `moss`           #5a6a4e   Strings (treesitter)

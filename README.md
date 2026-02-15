@@ -41,13 +41,13 @@ Defined in `lua/earthtone/palette.lua`.
 | `terracotta` | `#7a4f3a` | Keywords |
 | `moss` | `#5a6a4e` | Strings |
 | `blue_stone` | `#3b5b5f` | Functions |
-| `sage_green` | `#3a5b4d` | Types |
+| `sage_green` | `#3d593c` | Types |
 | `earth_brown` | `#907760` | Constants |
 | `warm_amber` | `#a8814f` | Numbers |
 | `charcoal` | `#5a4746` | Operators |
 | `dusty_purple` | `#9b7d8a` | Macros |
-| `coral` | `#c85552` | Errors |
-| `honey` | `#c9a05a` | Warnings |
+| `coral` | `#b96361` | Errors |
+| `honey` | `#bb9c68` | Warnings |
 | `olive` | `#89a05d` | Success |
 
 Override palette colors or highlight groups via `setup()`:
