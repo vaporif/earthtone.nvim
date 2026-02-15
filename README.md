@@ -5,8 +5,9 @@ A warm, natural light colorscheme for Neovim.
 Most themes optimize for looking good in screenshots. earthtone optimizes for staring at code all day — natural material colors (terracotta, moss, sandstone, driftwood) on a warm parchment background (`#e8dcc6`). Our eyes have been looking at dirt, leaves, and rocks for a few million years, so these are easy to process for hours. Distinct enough to tell your keywords from your strings, muted enough to stay comfortable.
 
 Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone takes the same gentle approach but shifts warmer (parchment bg instead of green-gray, clay/amber syntax instead of botanical greens) and adds per-language tuning for Rust, TypeScript, Go, Python, C/C++, Lua, Nix, Bash, JSON, and YAML.
+<img width="1717" height="1053" alt="Screenshot 2026-02-15 at 12 23 12" src="https://github.com/user-attachments/assets/8acef1ae-4e30-428c-b66e-8e7298855e34" />
+<img width="1714" height="1053" alt="Screenshot 2026-02-15 at 12 24 10" src="https://github.com/user-attachments/assets/217c1de6-828b-4cc4-a2a2-937464ce2d11" />
 
-<img width="1712" height="1054" alt="earthtone.nvim screenshot" src="https://github.com/user-attachments/assets/cabab29e-aa2b-46de-a545-e61e8f91adc9" />
 
 ## Install
 
@@ -64,7 +65,7 @@ vim.cmd.colorscheme('earthtone')
 
 blink.cmp, diffview, flash, fzf-lua, gitsigns, lazy, lualine, neo-tree, neotest, noice, nvim-dap/dap-ui, nvim-ufo, render-markdown, telescope, todo-comments, trouble, which-key, yanky
 
-Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter coverage with per-language overrides for Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++, Lua, Nix, Bash, HTML, CSS, JSON, YAML, and TOML.
+Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter coverage with per-language overrides.
 
 ## Extras
 
