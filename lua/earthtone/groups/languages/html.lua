@@ -4,6 +4,6 @@ return function(hi, c)
   hi('@tag.attribute.html', { fg = c.olive })
   hi('@tag.delimiter.html', { fg = c.stone_grey })
   hi('@string.html', { fg = c.moss })
-  hi('@operator.html', { fg = c.operator_warm })
-  hi('@constant.html', { fg = c.constant_warm })
+  hi('@operator.html', { fg = c.charcoal })
+  hi('@constant.html', { fg = c.rosewood })
 end

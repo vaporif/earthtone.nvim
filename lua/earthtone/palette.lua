@@ -40,17 +40,11 @@ return {
 
   -- Syntax base
   deep_forest = '#4d5b56',
-  blue_stone = '#3b5b5f',
   sage_green = '#3d593c',
-  earth_brown = '#907760',
-  dark_amber = '#795d39',
   moss = '#59664e',
   charcoal = '#534241',
-  weathered_oak = '#6f695f',
   clay = '#7a5a4a',
-  dried_rose = '#8d6975',
-  bark = '#7a6d5b',
-  twig = '#7a6756',
+  rosewood = '#6e4348',
 
   -- Syntax structural (punctuation, operators, line numbers)
   stone_grey = '#7d8d85',
@@ -63,19 +57,8 @@ return {
   statusline1 = '#3e474d',
   statusline3 = '#7a8478',
 
-  -- Semantic variants (reusable per-language overrides)
+  -- Semantic variants (per-language overrides, 3 hue lanes)
   keyword_warm = '#84583b',
-  conditional_warm = '#9d6b47',
-  modifier_copper = '#b87333',
-  keyword_muted = '#8b7355',
-  storage_amber = '#a67c52',
-  import_warm = '#a17c59',
-  method_sage = '#7a8a7f',
   type_deep = '#47695b',
-  function_deep = '#49676c',
-  call_warm = '#8b7d6b',
-  operator_warm = '#8a7766',
-  constant_warm = '#a08770',
-  float_muted = '#9a8f85',
-  control_warm = '#846347',
+  function_deep = '#3b5a6f',
 }

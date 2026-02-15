@@ -18,16 +18,16 @@ earthtone is a warm, natural light colorscheme designed to be easy on the
 eyes during long coding sessions.
 
 Every color is derived from natural materials -- terracotta, sage, sandstone,
-moss, weathered oak, river stone. The warm parchment background (#e8dcc6) reduces
+moss, rosewood, river stone. The warm parchment background (#e8dcc6) reduces
 blue light emission compared to pure white, while muted earthy syntax colors
 maintain clear distinction without competing for attention.
 
 Design principles:
 - Warm parchment background instead of stark white
 - Low-saturation earth tones for syntax
-- Natural contrast ratios
-- Distinct but harmonious color pairs
-- Language-specific tuning via semantic variants
+- WCAG AA contrast ratios for primary syntax colors
+- 5 distinct hue lanes for semantic clarity
+- Language-specific tuning via per-language overrides
 
 Requirements: Neovim >= 0.9.0 (termguicolors set automatically)
 
@@ -94,37 +94,28 @@ ACCENTS ~
 SYNTAX BASE ~
                                                  *earthtone-palette-syntax*
   `deep_forest`    #4d5b56   Variables
-  `blue_stone`     #3b5b5f   Function definitions
-  `sage_green`     #3d593c   Types (treesitter)
-  `earth_brown`    #907760   Constants
-  `dark_amber`     #795d39   Numbers
-  `moss`           #59664e   Strings (treesitter)
-  `charcoal`       #5a4746   Operators
-  `weathered_oak`  #6f695f   Builtin variables
+  `sage_green`     #3d593c   Types (treesitter base)
+  `moss`           #59664e   Strings
+  `charcoal`       #534241   Operators
   `clay`           #7a5a4a   Parameters
-  `dried_rose`     #8d6975   Floats
-  `bark`           #7a6d5b   Builtin functions
-  `twig`           #7a6756   Special punctuation
+  `rosewood`       #6e4348   Constants, numbers, booleans, floats
+
+SYNTAX STRUCTURAL ~
+                                             *earthtone-palette-structural*
+  `stone_grey`     #7d8d85   Punctuation, delimiters
+  `river_stone`    #859289   Fold text
+  `lichen`         #8d9d8d   Indent guides
 
 SEMANTIC VARIANTS ~
                                                 *earthtone-palette-semantic*
-Reusable per-language overrides (Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++,
-Lua, Nix, Bash, HTML, CSS, JSON, YAML, TOML):
+Five distinct hue lanes for per-language overrides (Rust, TypeScript/TSX,
+JavaScript, Go, Python, C/C++, Lua, Nix, Bash, HTML, CSS, JSON, YAML, TOML):
 
-  `keyword_warm`       #84583b
-  `conditional_warm`   #9d6b47
-  `modifier_copper`    #b87333
-  `keyword_muted`      #8b7355
-  `storage_amber`      #a67c52
-  `import_warm`        #a17c59
-  `method_sage`        #7a8a7f
-  `type_deep`          #47695b
-  `function_deep`      #49676c
-  `call_warm`          #8b7d6b
-  `operator_warm`      #8a7766
-  `constant_warm`      #a08770
-  `float_muted`        #9a8f85
-  `control_warm`       #846347
+  `keyword_warm`       #84583b   Amber (25deg) -- all keyword types
+  `type_deep`          #47695b   Forest green (155deg) -- types, structs, enums
+  `function_deep`      #3b5a6f   Slate blue (204deg) -- functions, methods, calls
+  `rosewood`           #6e4348   Muted rose (353deg) -- constants, numbers
+  `charcoal`           #534241   Neutral (3deg) -- operators
 
 ==============================================================================
 5. SUPPORTED PLUGINS                                      *earthtone-plugins*
@@ -201,7 +192,7 @@ Mode colors:
   insert    `sage`         (#708c7e)
   visual    `plum`         (#7f616e)
   replace   `coral`        (#c85552)
-  command   `dark_amber`   (#795d39)
+  command   `terracotta`   (#7a4f3a)
   terminal  `olive`        (#89a05d)
 
 ==============================================================================

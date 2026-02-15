@@ -39,13 +39,14 @@ Defined in `lua/earthtone/palette.lua`.
 | Name | Hex | Role |
 |------|-----|------|
 | `bg` | `#e8dcc6` | Background |
-| `terracotta` | `#7a4f3a` | Keywords |
+| `fg` | `#3e474d` | Foreground |
+| `keyword_warm` | `#84583b` | Keywords |
+| `function_deep` | `#3b5a6f` | Functions |
+| `type_deep` | `#47695b` | Types |
+| `rosewood` | `#6e4348` | Constants, numbers |
 | `moss` | `#59664e` | Strings |
-| `blue_stone` | `#3b5b5f` | Functions |
-| `sage_green` | `#3d593c` | Types |
-| `earth_brown` | `#907760` | Constants |
-| `dark_amber` | `#795d39` | Numbers |
-| `charcoal` | `#5a4746` | Operators |
+| `charcoal` | `#534241` | Operators |
+| `deep_forest` | `#4d5b56` | Variables |
 | `plum` | `#7f616e` | Macros |
 | `coral` | `#b96361` | Errors |
 | `honey` | `#bb9c68` | Warnings |

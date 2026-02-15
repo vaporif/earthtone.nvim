@@ -22,7 +22,7 @@ return {
     c = { bg = c.bg1, fg = c.light_pebble },
   },
   command = {
-    a = { bg = c.dark_amber, fg = c.bg, gui = 'bold' },
+    a = { bg = c.terracotta, fg = c.bg, gui = 'bold' },
     b = { bg = c.bg3, fg = c.statusline3 },
     c = { bg = c.bg1, fg = c.light_pebble },
   },
