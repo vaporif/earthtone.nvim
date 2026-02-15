@@ -1,6 +1,6 @@
 return {
   -- Foreground
-  fg = '#5c6a72',
+  fg = '#57646b',
   comment = '#9da9a0',
 
   -- Backgrounds (bg -> bg5: progressively darker, bg_dim: lighter than bg)
