@@ -171,21 +171,20 @@ Treesitter ~
 ==============================================================================
 6. CUSTOMIZING                                         *earthtone-customizing*
 
-Override specific highlights after loading: >lua
-  {
-    'vaporif/earthtone.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme('earthtone')
-      vim.api.nvim_set_hl(0, 'Comment', { fg = '#8a9a8e', italic = true })
-    end,
-  }
+Use `setup()` before loading to override palette colors or highlights: >lua
+  require('earthtone').setup({
+    palette = { bg = '#f0e8d4' },
+    overrides = { Comment = { fg = '#8a9a8e', italic = false } },
+  })
+  vim.cmd.colorscheme('earthtone')
 <
+
+Palette overrides are merged before highlights are applied, so all groups
+using that color will pick up the change. Highlight overrides are applied
+last, after all groups are set.
 
 Access the palette directly: >lua
   local c = require('earthtone.palette')
-  vim.api.nvim_set_hl(0, 'MyGroup', { fg = c.olive, bg = c.bg2 })
 <
 
 ==============================================================================

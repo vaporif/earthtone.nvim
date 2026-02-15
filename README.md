@@ -50,10 +50,14 @@ Defined in `lua/earthtone/palette.lua`.
 | `honey` | `#c9a05a` | Warnings |
 | `olive` | `#89a05d` | Success |
 
-Override after loading:
+Override palette colors or highlight groups via `setup()`:
 
 ```lua
-vim.api.nvim_set_hl(0, 'Comment', { fg = '#8a9a8e', italic = true })
+require('earthtone').setup({
+  palette = { bg = '#f0e8d4' },
+  overrides = { Comment = { fg = '#8a9a8e', italic = false } },
+})
+vim.cmd.colorscheme('earthtone')
 ```
 
 ## Plugin support
