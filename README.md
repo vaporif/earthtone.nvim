@@ -80,7 +80,7 @@ vim.cmd.colorscheme('earthtone')
 | `deep_forest` | `#4d5b56` | Variables |
 | `plum` | `#765a67` | Macros |
 | `coral` | `#9d4746` | Errors |
-| `toffee` | `#987945` | Warnings |
+| `toffee` | `#765e36` | Warnings |
 | `olive` | `#71844d` | Success |
 
 ### Dark (`#2b2826` background)

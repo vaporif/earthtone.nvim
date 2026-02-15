@@ -112,10 +112,10 @@ BACKGROUNDS ~
 ACCENTS ~
   `brick`          #924e4c   Errors, deletions, search
   `warm_orange`    #b06d47   Special, labels, operators
-  `toffee`          #987945   Warnings, types, modules
+  `toffee`          #765e36   Warnings, types, modules
   `olive`          #71844d   Success, strings, additions
   `teal`           #63847e   Constants, links, macros
-  `storm_blue`     #6b8285   Identifiers, hints, links
+  `storm_blue`     #536568   Identifiers, hints, links
   `plum`           #765a67   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords
   `coral`          #9d4746   Exceptions, comment errors
