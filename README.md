@@ -73,9 +73,9 @@ require('earthtone').setup({
 |------|-----|------|
 | `bg` | `#e8dcc6` | Background |
 | `fg` | `#3e474d` | Foreground |
-| `keyword_warm` | `#84583b` | Keywords |
-| `function_deep` | `#3b5a6f` | Functions |
-| `type_deep` | `#47695b` | Types |
+| `keyword_warm` | `#8b4a1e` | Keywords |
+| `function_deep` | `#2a5d85` | Functions |
+| `type_deep` | `#2a6e47` | Types |
 | `rosewood` | `#6e4348` | Constants, numbers |
 | `moss` | `#59664e` | Strings |
 | `charcoal` | `#534241` | Operators |
