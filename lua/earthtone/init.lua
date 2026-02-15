@@ -1,9 +1,9 @@
 local M = {}
 
-M.config = {}
+local config = {}
 
 function M.setup(opts)
-  M.config = opts or {}
+  config = opts or {}
 end
 
 function M.load()
@@ -15,7 +15,7 @@ function M.load()
   vim.o.termguicolors = true
   vim.o.background = 'light'
 
-  local c = vim.tbl_extend('force', require 'earthtone.palette', M.config.palette or {})
+  local c = vim.tbl_extend('force', require 'earthtone.palette', config.palette or {})
 
   local function hi(group, opts)
     vim.api.nvim_set_hl(0, group, opts)
@@ -27,7 +27,7 @@ function M.load()
   require 'earthtone.groups.languages'(hi, c)
   require 'earthtone.groups.plugins'(hi, c)
 
-  for group, opts in pairs(M.config.overrides or {}) do
+  for group, opts in pairs(config.overrides or {}) do
     hi(group, opts)
   end
 end
