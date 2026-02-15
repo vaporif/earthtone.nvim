@@ -121,9 +121,11 @@ Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter cove
 
 ## Extras
 
-Terminal themes in `extras/`:
+Terminal and system themes in `extras/`:
 - **WezTerm (light)** — copy `extras/wezterm.toml` to `~/.config/wezterm/colors/earthtone.toml`
 - **WezTerm (dark)** — copy `extras/wezterm_dark.toml` to `~/.config/wezterm/colors/earthtone-dark.toml`
+- **Base16 (light)** — `extras/base16-earthtone-light.toml` (for Stylix, base16-shell, etc.)
+- **Base16 (dark)** — `extras/base16-earthtone-dark.toml`
 
 ## Development
 

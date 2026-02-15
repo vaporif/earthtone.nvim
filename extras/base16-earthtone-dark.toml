@@ -1,0 +1,21 @@
+[scheme]
+name = "Earthtone Dark"
+author = "vaporif@proton.me"
+
+[palette]
+base00 = "2b2826" # bg — main background
+base01 = "302d2a" # bg1 — lighter background
+base02 = "4a4440" # bg_visual — selection
+base03 = "7a8478" # comment — comments, invisibles
+base04 = "8a9a90" # stone_grey — dark fg, status bars
+base05 = "d3c6aa" # fg — default foreground
+base06 = "9c8b89" # charcoal — light fg
+base07 = "98a89e" # river_stone — lightest neutral
+base08 = "c37c7a" # brick — red
+base09 = "d9956e" # warm_orange — orange
+base0A = "c9a56c" # toffee — yellow
+base0B = "a0b26e" # olive — green
+base0C = "8db8b0" # teal — cyan
+base0D = "6d9ab5" # function_deep — blue
+base0E = "a88596" # plum — purple
+base0F = "98a89e" # river_stone — brown
