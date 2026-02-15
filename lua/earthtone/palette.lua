@@ -34,7 +34,7 @@ return {
   sage = '#748a72',
 
   -- Link targets (used by plugins that link to named highlight groups)
-  red = '#a84440',
+  red = '#a14540',
   orange = '#c2591e',
   purple = '#8b6d7a',
 
@@ -44,7 +44,7 @@ return {
   sage_green = '#3d593c',
   earth_brown = '#907760',
   dark_amber = '#795d39',
-  moss = '#5a6a4e',
+  moss = '#59664e',
   charcoal = '#5a4746',
   weathered_oak = '#6f695f',
   clay = '#7a5a4a',
@@ -64,15 +64,15 @@ return {
   statusline3 = '#7a8478',
 
   -- Semantic variants (reusable per-language overrides)
-  keyword_warm = '#8b5a3c',
+  keyword_warm = '#84583b',
   conditional_warm = '#9d6b47',
   modifier_copper = '#b87333',
   keyword_muted = '#8b7355',
   storage_amber = '#a67c52',
   import_warm = '#a17c59',
   method_sage = '#7a8a7f',
-  type_deep = '#4a6b5d',
-  function_deep = '#4b6b6f',
+  type_deep = '#47695b',
+  function_deep = '#49676c',
   call_warm = '#8b7d6b',
   operator_warm = '#8a7766',
   constant_warm = '#a08770',

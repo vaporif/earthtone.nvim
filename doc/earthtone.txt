@@ -98,7 +98,7 @@ SYNTAX BASE ~
   `sage_green`     #3d593c   Types (treesitter)
   `earth_brown`    #907760   Constants
   `dark_amber`     #795d39   Numbers
-  `moss`           #5a6a4e   Strings (treesitter)
+  `moss`           #59664e   Strings (treesitter)
   `charcoal`       #5a4746   Operators
   `weathered_oak`  #6f695f   Builtin variables
   `clay`           #7a5a4a   Parameters
@@ -111,15 +111,15 @@ SEMANTIC VARIANTS ~
 Reusable per-language overrides (Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++,
 Lua, Nix, Bash, HTML, CSS, JSON, YAML, TOML):
 
-  `keyword_warm`       #8b5a3c
+  `keyword_warm`       #84583b
   `conditional_warm`   #9d6b47
   `modifier_copper`    #b87333
   `keyword_muted`      #8b7355
   `storage_amber`      #a67c52
   `import_warm`        #a17c59
   `method_sage`        #7a8a7f
-  `type_deep`          #4a6b5d
-  `function_deep`      #4b6b6f
+  `type_deep`          #47695b
+  `function_deep`      #49676c
   `call_warm`          #8b7d6b
   `operator_warm`      #8a7766
   `constant_warm`      #a08770

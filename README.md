@@ -40,7 +40,7 @@ Defined in `lua/earthtone/palette.lua`.
 |------|-----|------|
 | `bg` | `#e8dcc6` | Background |
 | `terracotta` | `#7a4f3a` | Keywords |
-| `moss` | `#5a6a4e` | Strings |
+| `moss` | `#59664e` | Strings |
 | `blue_stone` | `#3b5b5f` | Functions |
 | `sage_green` | `#3d593c` | Types |
 | `earth_brown` | `#907760` | Constants |
