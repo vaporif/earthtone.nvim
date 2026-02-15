@@ -38,3 +38,5 @@ jobs:
 
       - name: Validate colorscheme
         run: just validate
+
+      - uses: raven-actions/actionlint@v2

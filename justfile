@@ -3,7 +3,7 @@ default:
     @just --list
 
 # Run all checks
-check: lint check-typos
+check: lint check-typos lint-actions
 
 # Lint lua with selene and stylua
 lint:
@@ -17,6 +17,10 @@ fmt:
 # Check for typos
 check-typos:
     typos
+
+# Lint GitHub Actions workflows
+lint-actions:
+    actionlint
 
 # Validate colorscheme loads without errors
 validate:
