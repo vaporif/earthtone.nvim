@@ -88,7 +88,7 @@ ACCENTS ~
   `storm_blue`     #6b8b8f   Identifiers, hints, links
   `dusty_purple`   #9b7d8a   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords
-  `coral`          #c85552   Diagnostic errors
+  `coral`          #c85552   Exceptions, comment errors
   `sage`           #708c7e   Info, TODO
 
 SYNTAX BASE ~
@@ -108,7 +108,8 @@ SYNTAX BASE ~
 
 SEMANTIC VARIANTS ~
                                                 *earthtone-palette-semantic*
-Reusable per-language overrides (currently used for Rust):
+Reusable per-language overrides (Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++,
+Lua, Nix, Bash, HTML, CSS, JSON, YAML, TOML):
 
   `keyword_warm`       #8b5a3c
   `conditional_warm`   #9d6b47
@@ -144,6 +145,7 @@ Highlight groups are defined for the following plugins:
   |nvim-dap-ui|        Scopes, watches, controls, threads
   |nvim-ufo|           Fold ellipsis
   |render-markdown|    Heading backgrounds, code blocks, bullets
+  |telescope.nvim|     Finder, preview, prompt, selection
   |todo-comments|      TODO/FIX/HACK/WARN/PERF/NOTE/TEST
   |trouble.nvim|       Panel, count badge
   |which-key.nvim|     Key hints, groups, separators
@@ -164,7 +166,7 @@ Treesitter ~
   - Markup groups for markdown
   - HTML/JSX tag support
   - Diff highlights
-  - Language-specific overrides for Rust
+  - Per-language overrides (Rust, TS, Go, Python, C/C++, Lua, Nix, Bash, JSON, YAML)
 
 ==============================================================================
 6. CUSTOMIZING                                         *earthtone-customizing*
@@ -196,7 +198,7 @@ A matching lualine theme is bundled. It loads automatically: >lua
 <
 
 Mode colors:
-  normal    `statusline1`  (#5c6a72)
+  normal    `statusline1`  (#57646b)
   insert    `sage`         (#708c7e)
   visual    `dusty_purple` (#9b7d8a)
   replace   `coral`        (#c85552)

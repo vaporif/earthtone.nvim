@@ -26,7 +26,7 @@ jobs:
         uses: cargo-bins/cargo-binstall@main
 
       - name: Install linters
-        run: cargo binstall -y selene stylua typos-cli just
+        run: cargo binstall -y selene@0.30.0 stylua@2.3.1 typos-cli@1.42.3 just@1.46.0
 
       - name: Install Neovim
         uses: rhysd/action-setup-vim@v1

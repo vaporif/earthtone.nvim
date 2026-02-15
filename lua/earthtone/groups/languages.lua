@@ -10,6 +10,10 @@ local langs = {
   'yaml',
   'c',
   'cpp',
+  'html',
+  'javascript',
+  'css',
+  'toml',
 }
 
 return function(hi, c)

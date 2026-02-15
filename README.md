@@ -4,7 +4,7 @@ A warm, natural light colorscheme for Neovim.
 
 Most themes optimize for looking good in screenshots. earthtone optimizes for staring at code all day — natural material colors (terracotta, moss, sandstone, driftwood) on a warm parchment background (`#e8dcc6`). Our eyes have been looking at dirt, leaves, and rocks for a few million years, so these are easy to process for hours. Distinct enough to tell your keywords from your strings, muted enough to stay comfortable.
 
-Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone takes the same gentle approach but shifts warmer (parchment bg instead of green-gray, clay/amber syntax instead of botanical greens) and adds per-language tuning for Rust, TypeScript, and Python.
+Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone takes the same gentle approach but shifts warmer (parchment bg instead of green-gray, clay/amber syntax instead of botanical greens) and adds per-language tuning for Rust, TypeScript, Go, Python, C/C++, Lua, Nix, Bash, JSON, and YAML.
 
 <img width="1712" height="1054" alt="earthtone.nvim screenshot" src="https://github.com/user-attachments/assets/cabab29e-aa2b-46de-a545-e61e8f91adc9" />
 
@@ -58,9 +58,9 @@ vim.api.nvim_set_hl(0, 'Comment', { fg = '#8a9a8e', italic = true })
 
 ## Plugin support
 
-blink.cmp, diffview, flash, fzf-lua, gitsigns, lazy, lualine, neo-tree, neotest, noice, nvim-dap/dap-ui, nvim-ufo, render-markdown, todo-comments, trouble, which-key, yanky
+blink.cmp, diffview, flash, fzf-lua, gitsigns, lazy, lualine, neo-tree, neotest, noice, nvim-dap/dap-ui, nvim-ufo, render-markdown, telescope, todo-comments, trouble, which-key, yanky
 
-Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter coverage with Rust-specific overrides.
+Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter coverage with per-language overrides for Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++, Lua, Nix, Bash, HTML, CSS, JSON, YAML, and TOML.
 
 ## Development
 

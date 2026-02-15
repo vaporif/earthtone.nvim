@@ -40,13 +40,13 @@ return function(hi, c)
   hi('LspInfoBorder', { link = 'FloatBorder' })
 
   -- Diagnostics
-  hi('DiagnosticError', { fg = c.coral })
+  hi('DiagnosticError', { fg = c.brick })
   hi('DiagnosticWarn', { fg = c.honey })
   hi('DiagnosticInfo', { fg = c.sage })
   hi('DiagnosticHint', { fg = c.storm_blue })
   hi('DiagnosticOk', { fg = c.olive })
 
-  hi('DiagnosticUnderlineError', { undercurl = true, sp = c.coral })
+  hi('DiagnosticUnderlineError', { undercurl = true, sp = c.brick })
   hi('DiagnosticUnderlineWarn', { undercurl = true, sp = c.honey })
   hi('DiagnosticUnderlineInfo', { undercurl = true, sp = c.sage })
   hi('DiagnosticUnderlineHint', { undercurl = true, sp = c.storm_blue })

@@ -60,7 +60,7 @@ return {
   -- UI chrome
   light_pebble = '#9da9a0',
   pale_stone = '#b5c1b8',
-  statusline1 = '#5c6a72',
+  statusline1 = '#57646b',
   statusline3 = '#7a8478',
 
   -- Semantic variants (reusable per-language overrides)

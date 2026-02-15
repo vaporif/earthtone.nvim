@@ -255,6 +255,27 @@ return function(hi, c)
   -- nvim-ufo
   hi('UfoFoldedEllipsis', { fg = c.stone_grey })
 
+  -- telescope
+  hi('TelescopeNormal', { fg = c.fg, bg = c.bg_dim })
+  hi('TelescopeBorder', { fg = c.light_pebble, bg = c.bg_dim })
+  hi('TelescopeTitle', { fg = c.warm_orange, bold = true })
+  hi('TelescopePromptNormal', { fg = c.fg, bg = c.bg })
+  hi('TelescopePromptBorder', { fg = c.light_pebble, bg = c.bg })
+  hi('TelescopePromptTitle', { fg = c.warm_orange, bold = true })
+  hi('TelescopePromptPrefix', { fg = c.olive })
+  hi('TelescopePromptCounter', { fg = c.light_pebble })
+  hi('TelescopeResultsNormal', { fg = c.fg, bg = c.bg_dim })
+  hi('TelescopeResultsBorder', { fg = c.light_pebble, bg = c.bg_dim })
+  hi('TelescopeResultsTitle', { fg = c.warm_orange, bold = true })
+  hi('TelescopePreviewNormal', { fg = c.fg, bg = c.bg })
+  hi('TelescopePreviewBorder', { fg = c.light_pebble, bg = c.bg })
+  hi('TelescopePreviewTitle', { fg = c.warm_orange, bold = true })
+  hi('TelescopeSelection', { bg = c.bg1 })
+  hi('TelescopeSelectionCaret', { fg = c.brick })
+  hi('TelescopeMultiSelection', { fg = c.honey })
+  hi('TelescopeMultiIcon', { fg = c.honey })
+  hi('TelescopeMatching', { fg = c.olive, bold = true })
+
   -- diffview
   hi('DiffviewFilePanelTitle', { fg = c.warm_orange, bold = true })
   hi('DiffviewFilePanelCounter', { fg = c.dusty_purple })
