@@ -26,13 +26,15 @@ jobs:
         uses: cargo-bins/cargo-binstall@main
 
       - name: Install linters
-        run: cargo binstall -y selene stylua typos-cli
+        run: cargo binstall -y selene stylua typos-cli just
 
-      - name: Lint Lua (selene)
-        run: selene lua colors
+      - name: Install Neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
 
-      - name: Check Lua formatting (stylua)
-        run: stylua --check .
+      - name: Run checks
+        run: just check
 
-      - name: Check typos
-        run: typos
+      - name: Validate colorscheme
+        run: just validate
