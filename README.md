@@ -79,7 +79,7 @@ require('earthtone').setup({
 | `rosewood` | `#934045` | Constants, numbers |
 | `moss` | `#42632a` | Strings |
 | `charcoal` | `#534241` | Operators |
-| `deep_forest` | `#306352` | Variables |
+| `driftwood` | `#565047` | Variables |
 | `plum` | `#8c3f65` | Macros |
 | `coral` | `#a03935` | Errors |
 | `toffee` | `#725926` | Warnings |
@@ -97,7 +97,7 @@ require('earthtone').setup({
 | `rosewood` | `#b28388` | Constants, numbers |
 | `moss` | `#8da47a` | Strings |
 | `charcoal` | `#9c8b89` | Operators |
-| `deep_forest` | `#8aa89e` | Variables |
+| `driftwood` | `#8aa89e` | Variables |
 | `plum` | `#a88596` | Macros |
 | `coral` | `#d07574` | Errors |
 | `toffee` | `#c9a56c` | Warnings |

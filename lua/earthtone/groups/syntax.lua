@@ -50,8 +50,8 @@ return function(hi, c)
   hi('PurpleItalic', { fg = c.plum })
 
   -- Treesitter
-  hi('@variable', { fg = c.deep_forest })
-  hi('@variable.builtin', { fg = c.deep_forest, italic = true })
+  hi('@variable', { fg = c.driftwood })
+  hi('@variable.builtin', { fg = c.driftwood, italic = true })
   hi('@variable.parameter', { fg = c.clay })
   hi('@variable.member', { fg = c.storm_blue })
 

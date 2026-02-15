@@ -25,6 +25,6 @@ return function(hi, c)
   hi('@lsp.type.macro.c', { fg = c.plum })
   hi('@lsp.type.namespace.c', { fg = c.toffee })
   hi('@lsp.type.property.c', { fg = c.storm_blue })
-  hi('@lsp.type.variable.c', { fg = c.deep_forest })
+  hi('@lsp.type.variable.c', { fg = c.driftwood })
   hi('@lsp.type.parameter.c', { fg = c.clay })
 end
