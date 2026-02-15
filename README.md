@@ -66,6 +66,11 @@ blink.cmp, diffview, flash, fzf-lua, gitsigns, lazy, lualine, neo-tree, neotest,
 
 Full LSP support (semantic tokens, inlay hints, diagnostics) and treesitter coverage with per-language overrides for Rust, TypeScript/TSX, JavaScript, Go, Python, C/C++, Lua, Nix, Bash, HTML, CSS, JSON, YAML, and TOML.
 
+## Extras
+
+Terminal themes in `extras/`:
+- **WezTerm** — copy `extras/wezterm.toml` to `~/.config/wezterm/colors/earthtone.toml`
+
 ## Development
 
 ```bash

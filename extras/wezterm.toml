@@ -1,0 +1,32 @@
+[colors]
+foreground = "#57646b"
+background = "#e8dcc6"
+cursor_fg = "#e8dcc6"
+cursor_bg = "#57646b"
+selection_fg = "#57646b"
+selection_bg = "#d5c9b8"
+
+ansi = [
+  "#57646b",  # black (fg)
+  "#b85450",  # red (brick)
+  "#89a05d",  # green (olive)
+  "#c9a05a",  # yellow (honey)
+  "#6b8b8f",  # blue (storm_blue)
+  "#9b7d8a",  # magenta (dusty_purple)
+  "#6b9b91",  # cyan (aqua)
+  "#b5c1b8",  # white (pale_stone)
+]
+
+brights = [
+  "#7d8d85",  # bright black (stone_grey)
+  "#c85552",  # bright red (coral)
+  "#89a05d",  # bright green (olive)
+  "#c08563",  # bright yellow (warm_orange)
+  "#6b8b8f",  # bright blue (storm_blue)
+  "#9b7d8a",  # bright magenta (dusty_purple)
+  "#6b9b91",  # bright cyan (aqua)
+  "#f8f1de",  # bright white (bg_dim)
+]
+
+[metadata]
+name = "earthtone"
