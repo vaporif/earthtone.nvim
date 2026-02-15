@@ -19,7 +19,9 @@ Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone ta
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme('earthtone')
+    require('earthtone').setup({
+      -- Your config here
+    })
   end,
 }
 ```
@@ -33,7 +35,6 @@ Inspired by [everforest](https://github.com/sainnhe/everforest) — earthtone ta
   priority = 1000,
   config = function()
     require('earthtone').setup({ background = 'dark' })
-    vim.cmd.colorscheme('earthtone')
   end,
 }
 ```
@@ -48,13 +49,14 @@ require('lualine').setup {
 
 ## Configuration
 
+`setup()` accepts options and loads the colorscheme automatically.
+
 ```lua
 require('earthtone').setup({
   background = 'auto',  -- 'light', 'dark', or 'auto' (default)
   palette = {},          -- override individual palette colors
   overrides = {},        -- override highlight groups
 })
-vim.cmd.colorscheme('earthtone')
 ```
 
 | Option | Default | Description |
@@ -109,7 +111,6 @@ require('earthtone').setup({
   palette = { bg = '#1e1c1a' },
   overrides = { Comment = { fg = '#8a9a8e', italic = false } },
 })
-vim.cmd.colorscheme('earthtone')
 ```
 
 ## Plugin support

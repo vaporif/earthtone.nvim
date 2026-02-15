@@ -4,6 +4,7 @@ local config = {}
 
 function M.setup(opts)
   config = opts or {}
+  M.load()
 end
 
 local function resolve_background()
