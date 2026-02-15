@@ -22,21 +22,21 @@ return {
   bg_reference_write = '#d6c8ac',
 
   -- Accent (primary palette colors used across all highlight groups)
-  brick = '#ab605d',
-  warm_orange = '#c08563',
-  honey = '#bb9c68',
-  olive = '#89a05d',
-  aqua = '#71958e',
-  storm_blue = '#70888b',
-  plum = '#7f616e',
+  brick = '#924e4c',
+  warm_orange = '#b06d47',
+  honey = '#987945',
+  olive = '#71844d',
+  aqua = '#63847e',
+  storm_blue = '#6b8285',
+  plum = '#765a67',
   terracotta = '#7a4f3a',
-  coral = '#b96361',
-  sage = '#748a72',
+  coral = '#9d4746',
+  sage = '#6f836d',
 
   -- Link targets (used by plugins that link to named highlight groups)
   red = '#a14540',
   orange = '#c2591e',
-  purple = '#8b6d7a',
+  purple = '#745b66',
 
   -- Syntax base
   deep_forest = '#4d5b56',
@@ -47,7 +47,7 @@ return {
   rosewood = '#6e4348',
 
   -- Syntax structural (punctuation, operators, line numbers)
-  stone_grey = '#7d8d85',
+  stone_grey = '#72817a',
   river_stone = '#859289',
   lichen = '#8d9d8d',
 

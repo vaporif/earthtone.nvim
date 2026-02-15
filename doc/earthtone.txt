@@ -80,16 +80,16 @@ BACKGROUNDS ~
 
 ACCENTS ~
                                                  *earthtone-palette-accent*
-  `brick`          #ab605d   Errors, deletions, search
-  `warm_orange`    #c08563   Special, labels, operators
-  `honey`          #bb9c68   Warnings, types, modules
-  `olive`          #89a05d   Success, strings, additions
-  `aqua`           #71958e   Constants, links, macros
-  `storm_blue`     #70888b   Identifiers, hints, links
-  `plum`           #7f616e   Numbers, booleans, preprocessor
+  `brick`          #924e4c   Errors, deletions, search
+  `warm_orange`    #b06d47   Special, labels, operators
+  `honey`          #987945   Warnings, types, modules
+  `olive`          #71844d   Success, strings, additions
+  `aqua`           #63847e   Constants, links, macros
+  `storm_blue`     #6b8285   Identifiers, hints, links
+  `plum`           #765a67   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords
-  `coral`          #b96361   Exceptions, comment errors
-  `sage`           #748a72   Info, TODO
+  `coral`          #9d4746   Exceptions, comment errors
+  `sage`           #6f836d   Info, TODO
 
 SYNTAX BASE ~
                                                  *earthtone-palette-syntax*
@@ -102,7 +102,7 @@ SYNTAX BASE ~
 
 SYNTAX STRUCTURAL ~
                                              *earthtone-palette-structural*
-  `stone_grey`     #7d8d85   Punctuation, delimiters
+  `stone_grey`     #72817a   Punctuation, delimiters
   `river_stone`    #859289   Fold text
   `lichen`         #8d9d8d   Indent guides
 

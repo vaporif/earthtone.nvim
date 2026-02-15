@@ -47,10 +47,10 @@ Defined in `lua/earthtone/palette.lua`.
 | `moss` | `#59664e` | Strings |
 | `charcoal` | `#534241` | Operators |
 | `deep_forest` | `#4d5b56` | Variables |
-| `plum` | `#7f616e` | Macros |
-| `coral` | `#b96361` | Errors |
-| `honey` | `#bb9c68` | Warnings |
-| `olive` | `#89a05d` | Success |
+| `plum` | `#765a67` | Macros |
+| `coral` | `#9d4746` | Errors |
+| `honey` | `#987945` | Warnings |
+| `olive` | `#71844d` | Success |
 
 Override palette colors or highlight groups via `setup()`:
 
