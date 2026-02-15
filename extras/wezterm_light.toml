@@ -8,23 +8,23 @@ selection_bg = "#d5c9b8"
 
 ansi = [
   "#3e474d",  # black (fg)
-  "#924e4c",  # red (brick)
-  "#71844d",  # green (olive)
-  "#765e36",  # yellow (toffee)
-  "#536568",  # blue (storm_blue)
-  "#765a67",  # magenta (plum)
-  "#63847e",  # cyan (teal)
+  "#a2362f",  # red (brick)
+  "#4f7627",  # green (olive)
+  "#725926",  # yellow (toffee)
+  "#2c6376",  # blue (storm_blue)
+  "#973970",  # magenta (plum)
+  "#2c7670",  # cyan (teal)
   "#b5c1b8",  # white (pale_stone)
 ]
 
 brights = [
   "#72817a",  # bright black (stone_grey)
-  "#9d4746",  # bright red (coral)
-  "#71844d",  # bright green (olive)
-  "#b06d47",  # bright yellow (warm_orange)
-  "#536568",  # bright blue (storm_blue)
-  "#765a67",  # bright magenta (plum)
-  "#63847e",  # bright cyan (teal)
+  "#a03935",  # bright red (coral)
+  "#4f7627",  # bright green (olive)
+  "#a66130",  # bright yellow (warm_orange)
+  "#2c6376",  # bright blue (storm_blue)
+  "#973970",  # bright magenta (plum)
+  "#2c7670",  # bright cyan (teal)
   "#f8f1de",  # bright white (bg_dim)
 ]
 

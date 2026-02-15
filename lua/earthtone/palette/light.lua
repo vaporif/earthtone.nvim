@@ -22,29 +22,29 @@ return {
   bg_reference_write = '#d6c8ac',
 
   -- Accent (primary palette colors used across all highlight groups)
-  brick = '#924e4c',
-  warm_orange = '#b06d47',
-  toffee = '#765e36',
-  olive = '#71844d',
-  teal = '#63847e',
-  storm_blue = '#536568',
-  plum = '#765a67',
-  terracotta = '#7a4f3a',
-  coral = '#9d4746',
-  sage = '#6f836d',
+  brick = '#a2362f',
+  warm_orange = '#a66130',
+  toffee = '#725926',
+  olive = '#4f7627',
+  teal = '#2c7670',
+  storm_blue = '#2c6376',
+  plum = '#973970',
+  terracotta = '#8a4c28',
+  coral = '#a03935',
+  sage = '#44823e',
 
   -- Link targets (used by plugins that link to named highlight groups)
-  red = '#a14540',
+  red = '#9c3934',
   orange = '#c2591e',
-  purple = '#745b66',
+  purple = '#923e61',
 
   -- Syntax base
-  deep_forest = '#4d5b56',
-  sage_green = '#3d593c',
-  moss = '#59664e',
+  deep_forest = '#306352',
+  sage_green = '#276731',
+  moss = '#42632a',
   charcoal = '#534241',
-  clay = '#7a5a4a',
-  rosewood = '#6e4348',
+  clay = '#7d502f',
+  rosewood = '#9b3a4a',
 
   -- Syntax structural (punctuation, operators, line numbers)
   stone_grey = '#72817a',
@@ -58,7 +58,7 @@ return {
   statusline3 = '#7a8478',
 
   -- Semantic variants (per-language overrides, 3 hue lanes)
-  keyword_warm = '#8b4a1e',
-  type_deep = '#2a6e47',
-  function_deep = '#2a5d85',
+  keyword_warm = '#93461a',
+  type_deep = '#12683d',
+  function_deep = '#1c5ea0',
 }

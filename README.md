@@ -73,17 +73,17 @@ require('earthtone').setup({
 |------|-----|------|
 | `bg` | `#e8dcc6` | Background |
 | `fg` | `#3e474d` | Foreground |
-| `keyword_warm` | `#8b4a1e` | Keywords |
-| `function_deep` | `#2a5d85` | Functions |
-| `type_deep` | `#2a6e47` | Types |
-| `rosewood` | `#6e4348` | Constants, numbers |
-| `moss` | `#59664e` | Strings |
+| `keyword_warm` | `#93461a` | Keywords |
+| `function_deep` | `#1c5ea0` | Functions |
+| `type_deep` | `#12683d` | Types |
+| `rosewood` | `#9b3a4a` | Constants, numbers |
+| `moss` | `#42632a` | Strings |
 | `charcoal` | `#534241` | Operators |
-| `deep_forest` | `#4d5b56` | Variables |
-| `plum` | `#765a67` | Macros |
-| `coral` | `#9d4746` | Errors |
-| `toffee` | `#765e36` | Warnings |
-| `olive` | `#71844d` | Success |
+| `deep_forest` | `#306352` | Variables |
+| `plum` | `#973970` | Macros |
+| `coral` | `#a03935` | Errors |
+| `toffee` | `#725926` | Warnings |
+| `olive` | `#4f7627` | Success |
 
 ### Dark (`#2b2826` background)
 

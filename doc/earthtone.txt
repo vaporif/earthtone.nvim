@@ -113,23 +113,23 @@ BACKGROUNDS ~
   `bg_yellow`      #faf3e0   Stopped/warning background
 
 ACCENTS ~
-  `brick`          #924e4c   Errors, deletions, search
-  `warm_orange`    #b06d47   Special, labels, operators
-  `toffee`          #765e36   Warnings, types, modules
-  `olive`          #71844d   Success, strings, additions
-  `teal`           #63847e   Constants, links, macros
-  `storm_blue`     #536568   Identifiers, hints, links
-  `plum`           #765a67   Numbers, booleans, preprocessor
-  `terracotta`     #7a4f3a   Keywords
-  `coral`          #9d4746   Exceptions, comment errors
-  `sage`           #6f836d   Info, TODO
+  `brick`          #a2362f   Errors, deletions, search
+  `warm_orange`    #a66130   Special, labels, operators
+  `toffee`          #725926   Warnings, types, modules
+  `olive`          #4f7627   Success, strings, additions
+  `teal`           #2c7670   Constants, links, macros
+  `storm_blue`     #2c6376   Identifiers, hints, links
+  `plum`           #973970   Numbers, booleans, preprocessor
+  `terracotta`     #8a4c28   Keywords
+  `coral`          #a03935   Exceptions, comment errors
+  `sage`           #44823e   Info, TODO
 
 SYNTAX ~
   `fg`             #3e474d   Foreground text
-  `keyword_warm`   #8b4a1e   Keywords (amber lane)
-  `function_deep`  #2a5d85   Functions (slate-blue lane)
-  `type_deep`      #2a6e47   Types (forest-green lane)
-  `rosewood`       #6e4348   Constants, numbers (rose lane)
+  `keyword_warm`   #93461a   Keywords (amber lane)
+  `function_deep`  #1c5ea0   Functions (slate-blue lane)
+  `type_deep`      #12683d   Types (forest-green lane)
+  `rosewood`       #9b3a4a   Constants, numbers (rose lane)
   `charcoal`       #534241   Operators (neutral lane)
 
 DARK PALETTE ~
