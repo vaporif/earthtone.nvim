@@ -1,13 +1,13 @@
 [colors]
-foreground = "#4b565d"
+foreground = "#3e474d"
 background = "#e8dcc6"
 cursor_fg = "#e8dcc6"
-cursor_bg = "#4b565d"
-selection_fg = "#4b565d"
+cursor_bg = "#3e474d"
+selection_fg = "#3e474d"
 selection_bg = "#d5c9b8"
 
 ansi = [
-  "#4b565d",  # black (fg)
+  "#3e474d",  # black (fg)
   "#ab605d",  # red (brick)
   "#89a05d",  # green (olive)
   "#bb9c68",  # yellow (honey)

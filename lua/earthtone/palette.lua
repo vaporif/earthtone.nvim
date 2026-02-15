@@ -1,6 +1,6 @@
 return {
   -- Foreground
-  fg = '#4b565d',
+  fg = '#3e474d',
   comment = '#9da9a0',
 
   -- Backgrounds (bg -> bg5: progressively darker, bg_dim: lighter than bg)
@@ -45,7 +45,7 @@ return {
   earth_brown = '#907760',
   dark_amber = '#795d39',
   moss = '#59664e',
-  charcoal = '#5a4746',
+  charcoal = '#534241',
   weathered_oak = '#6f695f',
   clay = '#7a5a4a',
   dried_rose = '#8d6975',
@@ -60,7 +60,7 @@ return {
   -- UI chrome
   light_pebble = '#9da9a0',
   pale_stone = '#b5c1b8',
-  statusline1 = '#4b565d',
+  statusline1 = '#3e474d',
   statusline3 = '#7a8478',
 
   -- Semantic variants (reusable per-language overrides)

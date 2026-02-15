@@ -197,7 +197,7 @@ A matching lualine theme is bundled. It loads automatically: >lua
 <
 
 Mode colors:
-  normal    `statusline1`  (#4b565d)
+  normal    `statusline1`  (#3e474d)
   insert    `sage`         (#708c7e)
   visual    `plum`         (#7f616e)
   replace   `coral`        (#c85552)
