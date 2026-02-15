@@ -3,10 +3,10 @@ return function(hi, c)
   vim.g.terminal_color_0 = c.fg
   vim.g.terminal_color_1 = c.brick
   vim.g.terminal_color_2 = c.olive
-  vim.g.terminal_color_3 = c.honey
+  vim.g.terminal_color_3 = c.toffee
   vim.g.terminal_color_4 = c.storm_blue
   vim.g.terminal_color_5 = c.plum
-  vim.g.terminal_color_6 = c.aqua
+  vim.g.terminal_color_6 = c.teal
   vim.g.terminal_color_7 = c.pale_stone
   vim.g.terminal_color_8 = c.stone_grey
   vim.g.terminal_color_9 = c.coral
@@ -14,7 +14,7 @@ return function(hi, c)
   vim.g.terminal_color_11 = c.warm_orange
   vim.g.terminal_color_12 = c.storm_blue
   vim.g.terminal_color_13 = c.plum
-  vim.g.terminal_color_14 = c.aqua
+  vim.g.terminal_color_14 = c.teal
   vim.g.terminal_color_15 = c.bg_dim
 
   -- Editor UI
@@ -55,7 +55,7 @@ return function(hi, c)
   hi('Search', { fg = c.bg, bg = c.olive, bold = true })
   hi('IncSearch', { fg = c.bg, bg = c.brick })
   hi('CurSearch', { fg = c.bg, bg = c.brick })
-  hi('Substitute', { fg = c.bg, bg = c.honey })
+  hi('Substitute', { fg = c.bg, bg = c.toffee })
 
   hi('MatchParen', { bg = c.bg4 })
 
@@ -83,7 +83,7 @@ return function(hi, c)
   hi('WildMenu', { fg = c.bg, bg = c.statusline1 })
 
   hi('ErrorMsg', { fg = c.brick, bold = true })
-  hi('WarningMsg', { fg = c.honey, bold = true })
+  hi('WarningMsg', { fg = c.toffee, bold = true })
   hi('ModeMsg', { fg = c.fg, bold = true })
   hi('MoreMsg', { fg = c.olive, bold = true })
   hi('Question', { fg = c.olive, bold = true })
@@ -99,7 +99,7 @@ return function(hi, c)
 
   -- Spell
   hi('SpellBad', { undercurl = true, sp = c.brick })
-  hi('SpellCap', { undercurl = true, sp = c.honey })
-  hi('SpellLocal', { undercurl = true, sp = c.aqua })
+  hi('SpellCap', { undercurl = true, sp = c.toffee })
+  hi('SpellLocal', { undercurl = true, sp = c.teal })
   hi('SpellRare', { undercurl = true, sp = c.plum })
 end

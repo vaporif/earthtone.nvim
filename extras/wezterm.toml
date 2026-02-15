@@ -10,10 +10,10 @@ ansi = [
   "#3e474d",  # black (fg)
   "#924e4c",  # red (brick)
   "#71844d",  # green (olive)
-  "#987945",  # yellow (honey)
+  "#987945",  # yellow (toffee)
   "#6b8285",  # blue (storm_blue)
   "#765a67",  # magenta (plum)
-  "#63847e",  # cyan (aqua)
+  "#63847e",  # cyan (teal)
   "#b5c1b8",  # white (pale_stone)
 ]
 
@@ -24,7 +24,7 @@ brights = [
   "#b06d47",  # bright yellow (warm_orange)
   "#6b8285",  # bright blue (storm_blue)
   "#765a67",  # bright magenta (plum)
-  "#63847e",  # bright cyan (aqua)
+  "#63847e",  # bright cyan (teal)
   "#f8f1de",  # bright white (bg_dim)
 ]
 

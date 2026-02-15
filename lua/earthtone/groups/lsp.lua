@@ -41,28 +41,28 @@ return function(hi, c)
 
   -- Diagnostics
   hi('DiagnosticError', { fg = c.brick })
-  hi('DiagnosticWarn', { fg = c.honey })
+  hi('DiagnosticWarn', { fg = c.toffee })
   hi('DiagnosticInfo', { fg = c.sage })
   hi('DiagnosticHint', { fg = c.storm_blue })
   hi('DiagnosticOk', { fg = c.olive })
 
   hi('DiagnosticUnderlineError', { undercurl = true, sp = c.brick })
-  hi('DiagnosticUnderlineWarn', { undercurl = true, sp = c.honey })
+  hi('DiagnosticUnderlineWarn', { undercurl = true, sp = c.toffee })
   hi('DiagnosticUnderlineInfo', { undercurl = true, sp = c.sage })
   hi('DiagnosticUnderlineHint', { undercurl = true, sp = c.storm_blue })
 
   hi('DiagnosticVirtualTextError', { fg = c.brick, bg = c.bg2 })
-  hi('DiagnosticVirtualTextWarn', { fg = c.honey, bg = c.bg2 })
+  hi('DiagnosticVirtualTextWarn', { fg = c.toffee, bg = c.bg2 })
   hi('DiagnosticVirtualTextInfo', { fg = c.sage, bg = c.bg2 })
   hi('DiagnosticVirtualTextHint', { fg = c.storm_blue, bg = c.bg2 })
 
   hi('DiagnosticFloatingError', { fg = c.brick })
-  hi('DiagnosticFloatingWarn', { fg = c.honey })
+  hi('DiagnosticFloatingWarn', { fg = c.toffee })
   hi('DiagnosticFloatingInfo', { fg = c.sage })
   hi('DiagnosticFloatingHint', { fg = c.storm_blue })
 
   hi('DiagnosticSignError', { fg = c.brick })
-  hi('DiagnosticSignWarn', { fg = c.honey })
+  hi('DiagnosticSignWarn', { fg = c.toffee })
   hi('DiagnosticSignInfo', { fg = c.sage })
   hi('DiagnosticSignHint', { fg = c.storm_blue })
 

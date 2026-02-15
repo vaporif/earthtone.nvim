@@ -49,7 +49,7 @@ Defined in `lua/earthtone/palette.lua`.
 | `deep_forest` | `#4d5b56` | Variables |
 | `plum` | `#765a67` | Macros |
 | `coral` | `#9d4746` | Errors |
-| `honey` | `#987945` | Warnings |
+| `toffee` | `#987945` | Warnings |
 | `olive` | `#71844d` | Success |
 
 Override palette colors or highlight groups via `setup()`:

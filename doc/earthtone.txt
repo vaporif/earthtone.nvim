@@ -82,9 +82,9 @@ ACCENTS ~
                                                  *earthtone-palette-accent*
   `brick`          #924e4c   Errors, deletions, search
   `warm_orange`    #b06d47   Special, labels, operators
-  `honey`          #987945   Warnings, types, modules
+  `toffee`          #987945   Warnings, types, modules
   `olive`          #71844d   Success, strings, additions
-  `aqua`           #63847e   Constants, links, macros
+  `teal`           #63847e   Constants, links, macros
   `storm_blue`     #6b8285   Identifiers, hints, links
   `plum`           #765a67   Numbers, booleans, preprocessor
   `terracotta`     #7a4f3a   Keywords

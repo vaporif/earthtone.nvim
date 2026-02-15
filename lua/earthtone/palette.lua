@@ -24,9 +24,9 @@ return {
   -- Accent (primary palette colors used across all highlight groups)
   brick = '#924e4c',
   warm_orange = '#b06d47',
-  honey = '#987945',
+  toffee = '#987945',
   olive = '#71844d',
-  aqua = '#63847e',
+  teal = '#63847e',
   storm_blue = '#6b8285',
   plum = '#765a67',
   terracotta = '#7a4f3a',
