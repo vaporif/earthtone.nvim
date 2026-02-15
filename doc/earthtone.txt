@@ -46,7 +46,9 @@ lazy.nvim: >lua
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme('earthtone')
+      require('earthtone').setup({
+        -- Your config here
+      })
     end,
   }
 <
@@ -66,11 +68,10 @@ The palette module is available at: >lua
 ==============================================================================
 4. CONFIGURATION                                   *earthtone-configuration*
 
-Use `setup()` before loading to configure the variant: >lua
+`setup()` accepts options and loads the colorscheme automatically: >lua
   require('earthtone').setup({
     background = 'dark',  -- 'light', 'dark', or 'auto' (default)
   })
-  vim.cmd.colorscheme('earthtone')
 <
 
                                                   *earthtone-background*
@@ -79,10 +80,12 @@ Use `setup()` before loading to configure the variant: >lua
   `'light'`  Always use the light palette
   `'dark'`   Always use the dark palette
 
-When set to `'auto'`, you can switch variants at runtime: >vim
-  :set background=dark
-  :colorscheme earthtone
+When set to `'auto'`, you can switch variants at runtime: >lua
+  vim.o.background = 'dark'
+  require('earthtone').load()
 <
+
+You can also use `:colorscheme earthtone` directly without `setup()`.
 
 ==============================================================================
 5. PALETTE                                                 *earthtone-palette*
@@ -206,13 +209,12 @@ Treesitter ~
 ==============================================================================
 7. CUSTOMIZING                                         *earthtone-customizing*
 
-Use `setup()` before loading to override palette colors or highlights: >lua
+Override palette colors or highlights via `setup()`: >lua
   require('earthtone').setup({
     background = 'dark',
     palette = { bg = '#1e1c1a' },
     overrides = { Comment = { fg = '#8a9a8e', italic = false } },
   })
-  vim.cmd.colorscheme('earthtone')
 <
 
 Palette overrides are merged before highlights are applied, so all groups
