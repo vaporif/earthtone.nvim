@@ -44,7 +44,7 @@ return {
   moss = '#42632a',
   charcoal = '#534241',
   clay = '#7d502f',
-  rosewood = '#934045',
+  rosewood = '#6e3a7a',
 
   -- Syntax structural (punctuation, operators, line numbers)
   stone_grey = '#72817a',
@@ -60,5 +60,5 @@ return {
   -- Semantic variants (per-language overrides, 3 hue lanes)
   keyword_warm = '#93461a',
   type_deep = '#1a6840',
-  function_deep = '#2c5d80',
+  function_deep = '#264d8a',
 }
