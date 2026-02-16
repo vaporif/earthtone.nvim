@@ -60,5 +60,5 @@ return {
   -- Semantic variants (per-language overrides, 3 hue lanes)
   keyword_warm = '#ae5418',
   type_deep = '#1c9047',
-  function_deep = '#264d8a',
+  function_deep = '#6e4a3c',
 }
