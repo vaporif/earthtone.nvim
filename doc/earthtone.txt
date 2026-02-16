@@ -126,9 +126,9 @@ ACCENTS ~
 
 SYNTAX ~
   `fg`             #3e474d   Foreground text
-  `keyword_warm`   #ae5418   Keywords (amber lane)
+  `keyword_warm`   #d75117   Keywords (amber lane)
   `function_deep`  #264d8a   Functions (woad-blue lane)
-  `type_deep`      #14754e   Types (forest-green lane)
+  `type_deep`      #1c9047   Types (forest-green lane)
   `rosewood`       #6e3a7a   Constants, numbers (amethyst lane)
   `charcoal`       #534241   Operators (neutral lane)
 

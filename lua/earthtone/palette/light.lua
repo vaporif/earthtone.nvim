@@ -58,7 +58,7 @@ return {
   statusline3 = '#7a8478',
 
   -- Semantic variants (per-language overrides, 3 hue lanes)
-  keyword_warm = '#ae5418',
-  type_deep = '#14754e',
+  keyword_warm = '#d75117',
+  type_deep = '#1c9047',
   function_deep = '#264d8a',
 }
