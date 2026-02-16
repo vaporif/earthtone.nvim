@@ -32,7 +32,7 @@ return function(hi, c)
   hi('@lsp.type.method.cpp', { fg = c.function_deep })
   hi('@lsp.type.macro.cpp', { fg = c.plum })
   hi('@lsp.type.namespace.cpp', { fg = c.toffee })
-  hi('@lsp.type.property.cpp', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.cpp', { fg = c.driftwood })
   hi('@lsp.type.parameter.cpp', { fg = c.clay })
 end

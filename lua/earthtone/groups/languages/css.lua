@@ -1,5 +1,4 @@
 return function(hi, c)
-  hi('@property.css', { fg = c.storm_blue })
   hi('@tag.css', { fg = c.warm_orange })
   hi('@type.css', { fg = c.type_deep })
   hi('@string.css', { fg = c.moss })

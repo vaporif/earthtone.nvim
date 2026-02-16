@@ -30,7 +30,7 @@ return function(hi, c)
   hi('@lsp.type.function.typescript', { fg = c.function_deep })
   hi('@lsp.type.method.typescript', { fg = c.function_deep })
   hi('@lsp.type.namespace.typescript', { fg = c.toffee })
-  hi('@lsp.type.property.typescript', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.typescript', { fg = c.driftwood })
   hi('@lsp.type.parameter.typescript', { fg = c.clay })
 
@@ -66,7 +66,7 @@ return function(hi, c)
   hi('@lsp.type.function.typescriptreact', { fg = c.function_deep })
   hi('@lsp.type.method.typescriptreact', { fg = c.function_deep })
   hi('@lsp.type.namespace.typescriptreact', { fg = c.toffee })
-  hi('@lsp.type.property.typescriptreact', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.typescriptreact', { fg = c.driftwood })
   hi('@lsp.type.parameter.typescriptreact', { fg = c.clay })
 end

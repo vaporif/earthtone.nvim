@@ -25,7 +25,7 @@ return function(hi, c)
   hi('@lsp.type.function.go', { fg = c.function_deep })
   hi('@lsp.type.method.go', { fg = c.function_deep })
   hi('@lsp.type.namespace.go', { fg = c.toffee })
-  hi('@lsp.type.property.go', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.go', { fg = c.driftwood })
   hi('@lsp.type.parameter.go', { fg = c.clay })
 end

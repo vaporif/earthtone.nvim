@@ -29,7 +29,7 @@ return function(hi, c)
   hi('@lsp.type.function.python', { fg = c.function_deep })
   hi('@lsp.type.method.python', { fg = c.function_deep })
   hi('@lsp.type.namespace.python', { fg = c.toffee })
-  hi('@lsp.type.property.python', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.python', { fg = c.driftwood })
   hi('@lsp.type.parameter.python', { fg = c.clay })
   hi('@lsp.type.decorator.python', { fg = c.plum })

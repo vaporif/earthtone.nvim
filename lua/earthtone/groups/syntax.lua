@@ -85,7 +85,7 @@ return function(hi, c)
 
   hi('@attribute', { fg = c.plum })
   hi('@attribute.builtin', { fg = c.plum })
-  hi('@property', { fg = c.storm_blue })
+  hi('@property', { fg = c.fg })
 
   hi('@function', { fg = c.function_deep })
   hi('@function.builtin', { fg = c.function_deep, italic = true })

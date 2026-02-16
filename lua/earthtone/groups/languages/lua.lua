@@ -22,7 +22,7 @@ return function(hi, c)
   hi('@lsp.type.keyword.lua', { fg = c.keyword_warm })
   hi('@lsp.type.function.lua', { fg = c.function_deep })
   hi('@lsp.type.method.lua', { fg = c.function_deep })
-  hi('@lsp.type.property.lua', { fg = c.storm_blue })
+
   hi('@lsp.type.variable.lua', { fg = c.driftwood })
   hi('@lsp.type.parameter.lua', { fg = c.clay })
 end
