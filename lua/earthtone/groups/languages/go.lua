@@ -18,7 +18,7 @@ return function(hi, c)
   hi('@number.float.go', { fg = c.rosewood })
 
   hi('@lsp.type.type.go', { fg = c.type_deep })
-  hi('@lsp.type.struct.go', { fg = c.type_deep })
+  hi('@lsp.type.struct.go', { fg = c.teal })
   hi('@lsp.type.interface.go', { fg = c.type_deep })
   hi('@lsp.type.typeParameter.go', { fg = c.type_deep })
   hi('@lsp.type.keyword.go', { fg = c.keyword_warm })

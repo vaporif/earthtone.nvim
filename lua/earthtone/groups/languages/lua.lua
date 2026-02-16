@@ -18,7 +18,7 @@ return function(hi, c)
   hi('@number.float.lua', { fg = c.rosewood })
 
   hi('@lsp.type.type.lua', { fg = c.type_deep })
-  hi('@lsp.type.class.lua', { fg = c.type_deep })
+  hi('@lsp.type.class.lua', { fg = c.teal })
   hi('@lsp.type.keyword.lua', { fg = c.keyword_warm })
   hi('@lsp.type.function.lua', { fg = c.function_deep })
   hi('@lsp.type.method.lua', { fg = c.function_deep })
