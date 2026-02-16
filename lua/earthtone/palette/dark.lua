@@ -39,7 +39,7 @@ return {
   purple = '#a88596',
 
   -- Syntax base
-  driftwood = '#8aa89e',
+  driftwood = '#b8ad9d',
   sage_green = '#7ba67a',
   moss = '#8da47a',
   charcoal = '#9c8b89',
