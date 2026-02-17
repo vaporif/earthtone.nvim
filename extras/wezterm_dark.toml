@@ -11,7 +11,7 @@ ansi = [
   "#c37c7a",  # red (brick)
   "#a0b26e",  # green (olive)
   "#c9a56c",  # yellow (toffee)
-  "#b6836d",  # terracotta
+  "#a0b26e",  # olive
   "#a88596",  # magenta (plum)
   "#8db8b0",  # cyan (teal)
   "#d3c6aa",  # white (fg)
