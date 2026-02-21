@@ -3,7 +3,11 @@ default:
     @just --list
 
 # Run all checks
+# Run all checks (local, requires all tools)
 check: lint check-typos lint-actions
+
+# Run CI checks (no actionlint, handled by dedicated action)
+check-ci: lint check-typos
 
 # Lint lua with selene and stylua
 lint:

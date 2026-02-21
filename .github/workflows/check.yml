@@ -34,7 +34,7 @@ jobs:
           neovim: true
 
       - name: Run checks
-        run: just check
+        run: just check-ci
 
       - name: Validate colorscheme
         run: just validate
