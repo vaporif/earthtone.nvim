@@ -1,0 +1,26 @@
+name: panvimdoc
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/panvimdoc.yml
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: kdheepak/panvimdoc@v4
+        with:
+          vimdoc: earthtone
+          version: "Neovim >= 0.9.0"
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update vimdoc"

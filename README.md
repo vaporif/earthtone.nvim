@@ -69,39 +69,111 @@ require('earthtone').setup({
 
 ### Light (`#e8dcc6` background)
 
+**Backgrounds**
+
 | Name | Hex | Role |
 |------|-----|------|
-| `bg` | `#e8dcc6` | Background |
-| `fg` | `#3e474d` | Foreground |
-| `keyword_warm` | `#ae5418` | Keywords |
-| `function_deep` | `#264d8a` | Functions |
-| `type_deep` | `#1c9047` | Types |
-| `rosewood` | `#6e3a7a` | Constants, numbers |
+| `bg` | `#e8dcc6` | Main background (warm parchment) |
+| `bg1` | `#eae4ca` | Subtle alternate |
+| `bg2` | `#e5dfc5` | Float/popup background |
+| `bg3` | `#ddd8be` | Statusline, tabline |
+| `bg4` | `#d8d3ba` | Separators, non-text |
+| `bg5` | `#b9c0ab` | Line numbers, conceal |
+| `bg_dim` | `#f8f1de` | Sidebars, panels |
+| `bg_cursor` | `#faf3e8` | Cursor line |
+| `bg_visual` | `#d5c9b8` | Visual selection |
+| `bg_yank` | `#e8e2cf` | Yank highlight |
+| `bg_red` | `#fce8e8` | Diff delete background |
+| `bg_green` | `#f0f4e6` | Diff add background |
+| `bg_blue` | `#e8f0f3` | Diff change background |
+| `bg_yellow` | `#faf3e0` | Stopped/warning background |
+
+**Syntax**
+
+| Name | Hex | Role |
+|------|-----|------|
+| `fg` | `#3e474d` | Foreground text |
+| `comment` | `#9da9a0` | Comments |
+| `keyword_warm` | `#9a6030` | Keywords (amber lane) |
+| `function_deep` | `#6e4a3c` | Functions (woad-blue lane) |
+| `type_deep` | `#1c9047` | Types (forest-green lane) |
+| `rosewood` | `#6e3a7a` | Constants, numbers (amethyst lane) |
+| `charcoal` | `#534241` | Operators (neutral lane) |
 | `moss` | `#42632a` | Strings |
-| `charcoal` | `#534241` | Operators |
 | `driftwood` | `#565047` | Variables |
-| `plum` | `#8c3f65` | Macros |
-| `coral` | `#a03935` | Errors |
-| `toffee` | `#725926` | Warnings |
-| `olive` | `#607530` | Success |
+| `sage_green` | `#3a6835` | Secondary green |
+| `clay` | `#7d502f` | Secondary warm |
+| `stone_grey` | `#72817a` | Punctuation |
+| `river_stone` | `#859289` | Line numbers |
+
+**Accents**
+
+| Name | Hex | Role |
+|------|-----|------|
+| `brick` | `#a2362f` | Errors, deletions, search |
+| `warm_orange` | `#a66130` | Special, labels, operators |
+| `toffee` | `#725926` | Warnings, types, modules |
+| `olive` | `#607530` | Success, strings, additions |
+| `teal` | `#2c7670` | Constants, links, macros |
+| `storm_blue` | `#2c6376` | Identifiers, hints |
+| `plum` | `#8c3f65` | Attributes, macros, preprocessor |
+| `terracotta` | `#8a4c28` | Keywords |
+| `coral` | `#a03935` | Exceptions, comment errors |
+| `sage` | `#4e7a4a` | Info, TODO |
 
 ### Dark (`#2b2826` background)
 
+**Backgrounds**
+
 | Name | Hex | Role |
 |------|-----|------|
-| `bg` | `#2b2826` | Background |
-| `fg` | `#d3c6aa` | Foreground |
-| `keyword_warm` | `#c08a64` | Keywords |
-| `function_deep` | `#6d9ab5` | Functions |
-| `type_deep` | `#7bab94` | Types |
-| `rosewood` | `#b28388` | Constants, numbers |
+| `bg` | `#2b2826` | Main background (warm dark brown) |
+| `bg1` | `#302d2a` | Subtle alternate |
+| `bg2` | `#363230` | Float/popup background |
+| `bg3` | `#3d3936` | Statusline, tabline |
+| `bg4` | `#45413d` | Separators, non-text |
+| `bg5` | `#504b47` | Line numbers, conceal |
+| `bg_dim` | `#242120` | Sidebars, panels |
+| `bg_cursor` | `#322f2c` | Cursor line |
+| `bg_visual` | `#4a4440` | Visual selection |
+| `bg_yank` | `#3e3a36` | Yank highlight |
+| `bg_red` | `#402a2a` | Diff delete background |
+| `bg_green` | `#2e3a2a` | Diff add background |
+| `bg_blue` | `#2a3240` | Diff change background |
+| `bg_yellow` | `#3a3428` | Stopped/warning background |
+
+**Syntax**
+
+| Name | Hex | Role |
+|------|-----|------|
+| `fg` | `#d3c6aa` | Foreground text |
+| `comment` | `#7a8478` | Comments |
+| `keyword_warm` | `#c08a64` | Keywords (amber lane) |
+| `function_deep` | `#6d9ab5` | Functions (slate-blue lane) |
+| `type_deep` | `#7bab94` | Types (forest-green lane) |
+| `rosewood` | `#b28388` | Constants, numbers (rose lane) |
+| `charcoal` | `#9c8b89` | Operators (neutral lane) |
 | `moss` | `#8da47a` | Strings |
-| `charcoal` | `#9c8b89` | Operators |
-| `driftwood` | `#8aa89e` | Variables |
-| `plum` | `#a88596` | Macros |
-| `coral` | `#d07574` | Errors |
-| `toffee` | `#c9a56c` | Warnings |
-| `olive` | `#a0b26e` | Success |
+| `driftwood` | `#b8ad9d` | Variables |
+| `sage_green` | `#7ba67a` | Secondary green |
+| `clay` | `#b58c78` | Secondary warm |
+| `stone_grey` | `#8a9a90` | Punctuation |
+| `river_stone` | `#98a89e` | Line numbers |
+
+**Accents**
+
+| Name | Hex | Role |
+|------|-----|------|
+| `brick` | `#c37c7a` | Errors, deletions, search |
+| `warm_orange` | `#d9956e` | Special, labels, operators |
+| `toffee` | `#c9a56c` | Warnings, types, modules |
+| `olive` | `#a0b26e` | Success, strings, additions |
+| `teal` | `#8db8b0` | Constants, links, macros |
+| `storm_blue` | `#94b0b3` | Identifiers, hints |
+| `plum` | `#a88596` | Attributes, macros, preprocessor |
+| `terracotta` | `#b6836d` | Keywords |
+| `coral` | `#d07574` | Exceptions, comment errors |
+| `sage` | `#98b28e` | Info, TODO |
 
 Override palette colors or highlight groups via `setup()`:
 

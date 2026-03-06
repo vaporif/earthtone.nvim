@@ -1,6 +1,8 @@
 local M = {}
 
 local config = {}
+local current_variant = nil
+local loading = false
 
 function M.setup(opts)
   config = opts or {}
@@ -17,40 +19,57 @@ end
 
 local function clear_module_cache()
   for key in pairs(package.loaded) do
-    if key:find '^earthtone' then
+    if key:find '^earthtone%.' then
       package.loaded[key] = nil
     end
   end
 end
 
 function M.load()
-  if vim.g.colors_name then
-    vim.cmd 'hi clear'
+  if loading then
+    return
   end
+  loading = true
 
-  local variant = resolve_background()
+  local ok, err = pcall(function()
+    if vim.g.colors_name then
+      vim.cmd 'hi clear'
+    end
 
-  clear_module_cache()
+    local variant = resolve_background()
 
-  vim.g.colors_name = 'earthtone'
-  vim.o.termguicolors = true
-  vim.o.background = variant
+    if variant ~= current_variant then
+      clear_module_cache()
+    end
 
-  local palette = require 'earthtone.palette'
-  local c = vim.tbl_extend('force', palette.get(variant), config.palette or {})
+    vim.g.colors_name = 'earthtone'
+    vim.o.termguicolors = true
+    vim.o.background = variant
 
-  local function hi(group, opts)
-    vim.api.nvim_set_hl(0, group, opts)
-  end
+    local palette = require 'earthtone.palette'
+    local c = vim.tbl_extend('force', palette.get(variant), config.palette or {})
 
-  require 'earthtone.groups.editor'(hi, c)
-  require 'earthtone.groups.syntax'(hi, c)
-  require 'earthtone.groups.lsp'(hi, c)
-  require 'earthtone.groups.languages'(hi, c)
-  require 'earthtone.groups.plugins'(hi, c)
+    local function hi(group, opts)
+      vim.api.nvim_set_hl(0, group, opts)
+    end
 
-  for group, opts in pairs(config.overrides or {}) do
-    hi(group, opts)
+    require 'earthtone.groups.editor'(hi, c)
+    require 'earthtone.groups.syntax'(hi, c)
+    require 'earthtone.groups.lsp'(hi, c)
+    require 'earthtone.groups.languages'(hi, c)
+    require 'earthtone.groups.plugins'(hi, c)
+
+    for group, opts in pairs(config.overrides or {}) do
+      hi(group, opts)
+    end
+
+    current_variant = variant
+  end)
+
+  loading = false
+
+  if not ok then
+    vim.notify('[earthtone] ' .. tostring(err), vim.log.levels.ERROR)
   end
 end
 
