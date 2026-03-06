@@ -40,7 +40,6 @@ function M.load()
 
     if variant ~= current_variant then
       clear_module_cache()
-      current_variant = variant
     end
 
     vim.g.colors_name = 'earthtone'
@@ -63,6 +62,8 @@ function M.load()
     for group, opts in pairs(config.overrides or {}) do
       hi(group, opts)
     end
+
+    current_variant = variant
   end)
 
   loading = false
