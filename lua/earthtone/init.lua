@@ -1,6 +1,8 @@
 local M = {}
 
 local config = {}
+local current_variant = nil
+local loading = false
 
 function M.setup(opts)
   config = opts or {}
@@ -17,20 +19,28 @@ end
 
 local function clear_module_cache()
   for key in pairs(package.loaded) do
-    if key:find '^earthtone' then
+    if key:find '^earthtone%.' then
       package.loaded[key] = nil
     end
   end
 end
 
 function M.load()
+  if loading then
+    return
+  end
+  loading = true
+
   if vim.g.colors_name then
     vim.cmd 'hi clear'
   end
 
   local variant = resolve_background()
 
-  clear_module_cache()
+  if variant ~= current_variant then
+    clear_module_cache()
+    current_variant = variant
+  end
 
   vim.g.colors_name = 'earthtone'
   vim.o.termguicolors = true
@@ -52,6 +62,8 @@ function M.load()
   for group, opts in pairs(config.overrides or {}) do
     hi(group, opts)
   end
+
+  loading = false
 end
 
 return M
