@@ -9,26 +9,22 @@
     ...
   }: let
     forAllSystems = nixpkgs.lib.genAttrs ["x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
-  in {
-    packages = forAllSystems (system: let
-      pkgs = nixpkgs.legacyPackages.${system};
-    in {
-      default = pkgs.vimUtils.buildVimPlugin {
+    mkPlugin = pkgs:
+      pkgs.vimUtils.buildVimPlugin {
         pname = "earthtone.nvim";
         version = "unstable";
         src = self;
       };
+  in {
+    packages = forAllSystems (system: {
+      default = mkPlugin nixpkgs.legacyPackages.${system};
     });
 
     overlays.default = _final: _prev: {
       vimPlugins =
         (_prev.vimPlugins or {})
         // {
-          earthtone-nvim = _final.vimUtils.buildVimPlugin {
-            pname = "earthtone.nvim";
-            version = "unstable";
-            src = self;
-          };
+          earthtone-nvim = mkPlugin _final;
         };
     };
 
