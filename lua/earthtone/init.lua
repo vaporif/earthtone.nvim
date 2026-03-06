@@ -31,39 +31,45 @@ function M.load()
   end
   loading = true
 
-  if vim.g.colors_name then
-    vim.cmd 'hi clear'
-  end
+  local ok, err = pcall(function()
+    if vim.g.colors_name then
+      vim.cmd 'hi clear'
+    end
 
-  local variant = resolve_background()
+    local variant = resolve_background()
 
-  if variant ~= current_variant then
-    clear_module_cache()
-    current_variant = variant
-  end
+    if variant ~= current_variant then
+      clear_module_cache()
+      current_variant = variant
+    end
 
-  vim.g.colors_name = 'earthtone'
-  vim.o.termguicolors = true
-  vim.o.background = variant
+    vim.g.colors_name = 'earthtone'
+    vim.o.termguicolors = true
+    vim.o.background = variant
 
-  local palette = require 'earthtone.palette'
-  local c = vim.tbl_extend('force', palette.get(variant), config.palette or {})
+    local palette = require 'earthtone.palette'
+    local c = vim.tbl_extend('force', palette.get(variant), config.palette or {})
 
-  local function hi(group, opts)
-    vim.api.nvim_set_hl(0, group, opts)
-  end
+    local function hi(group, opts)
+      vim.api.nvim_set_hl(0, group, opts)
+    end
 
-  require 'earthtone.groups.editor'(hi, c)
-  require 'earthtone.groups.syntax'(hi, c)
-  require 'earthtone.groups.lsp'(hi, c)
-  require 'earthtone.groups.languages'(hi, c)
-  require 'earthtone.groups.plugins'(hi, c)
+    require 'earthtone.groups.editor'(hi, c)
+    require 'earthtone.groups.syntax'(hi, c)
+    require 'earthtone.groups.lsp'(hi, c)
+    require 'earthtone.groups.languages'(hi, c)
+    require 'earthtone.groups.plugins'(hi, c)
 
-  for group, opts in pairs(config.overrides or {}) do
-    hi(group, opts)
-  end
+    for group, opts in pairs(config.overrides or {}) do
+      hi(group, opts)
+    end
+  end)
 
   loading = false
+
+  if not ok then
+    vim.notify('[earthtone] ' .. tostring(err), vim.log.levels.ERROR)
+  end
 end
 
 return M
